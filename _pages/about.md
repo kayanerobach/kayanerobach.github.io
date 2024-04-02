@@ -8,12 +8,11 @@ profile:
   align: right
   image: KR.png
   image_circular: false # crops the image to make it circular
+  <p>\(^{\star}\) <a href=https://www.amc.nl/web/home.htm>Amsterdam UMC</a>, Epidemiology and Data Science, <a href=https://www.bigstatistics.nl/>BigStatistics</a> <br> \(^{\star}\) Amsterdam Public Health, Methodology</p>
   more_info: >
     <p>555 your office number</p>
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
-
-<p>\(^{\star}\) <a href=https://www.amc.nl/web/home.htm>Amsterdam UMC</a>, Epidemiology and Data Science, <a href=https://www.bigstatistics.nl/>BigStatistics</a> <br> \(^{\star}\) Amsterdam Public Health, Methodology</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
