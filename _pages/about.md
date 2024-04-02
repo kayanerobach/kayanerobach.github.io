@@ -32,5 +32,5 @@ At the intersection of causal inference and record linkage I seek to develop sta
 <br>
 <br>
 
-\(^{\star}\) [Amsterdam UMC](https://www.amc.nl/web/home.htm)Amsterdam UMC, Epidemiology and Data Science, [BigStatistics](https://www.bigstatistics.nl/)
-\(^{\star}\) Amsterdam Public Health, Methodology
+$^{\star}$ [Amsterdam UMC](https://www.amc.nl/web/home.htm)Amsterdam UMC, Epidemiology and Data Science, [BigStatistics](https://www.bigstatistics.nl/)
+$^{\star}$ Amsterdam Public Health, Methodology
