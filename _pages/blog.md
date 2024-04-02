@@ -141,15 +141,15 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
+        <!-- {{ read_time }} min read &nbsp; &middot; &nbsp; -->
         {{ post.date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+        <!-- <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> -->
+        <!-- <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a> -->
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
@@ -159,13 +159,13 @@ pagination:
               {% endfor %}
           {% endif %}
 
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
+          <!-- {% if categories != "" %} -->
+          <!-- &nbsp; &middot; &nbsp; -->
+          <!-- {% for category in post.categories %} -->
+          <!-- <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}"> -->
+          <!-- <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp; -->
+          <!-- {% endfor %} -->
+          <!-- {% endif %} -->
     </p>
 
 {% if post.thumbnail %}
