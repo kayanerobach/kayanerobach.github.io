@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: <div>
-    <h4>Կայանէ</h4>
+    <h4>(Կայանէ)</h4>
   </div> #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -28,3 +28,4 @@ From science to practice my work revolves around bridging the gap between causal
 In many instances data are collected at different points in time, where baseline information is gathered from a prior study and the outcome data are collected later.
 
 At the intersection of causal inference and record linkage I seek to develop statistical methods that propagates the uncertainty inherent in record linkage procedures to ensure reliable causal estimates.
+
