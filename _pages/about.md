@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: <h3 (Կայանէ) </h3> #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <div class="header-bar">
+    <h3>(Կայանէ)</h3>
+  </div> #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
