@@ -5,4 +5,6 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+[**Amsterdam Causality Meeting**](https://amscausality.github.io/) organised by Stéphanie van der Pas, Sara Magliacane and Joris Mooij.
+
+**Causality reading group** oprganised by Louk Smalbil and Andreas Sauter.
