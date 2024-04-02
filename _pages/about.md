@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: <div>
-    <h4>(Կայանէ)</h4>
+    <h4>Կայանէ</h4>
   </div> #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
