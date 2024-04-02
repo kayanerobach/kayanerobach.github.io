@@ -16,13 +16,7 @@ profile:
     <br>
 
 news: true # includes a list of news items
-    <br>
-    <br>
-    <br>
 selected_papers: true # includes a list of papers marked as "selected={true}"
-    <br>
-    <br>
-    <br>
 social: true # includes social icons at the bottom of the page
 ---
 
