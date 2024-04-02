@@ -1,7 +1,6 @@
 github_users:
   - robachowyk
 
-
 github_repos:
-  - RecordLinkage
-  - RMTTheoreticalEcology
+  - robachowyk/RecordLinkage
+  - robachowyk/RMTTheoreticalEcology
