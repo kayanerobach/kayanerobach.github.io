@@ -28,3 +28,14 @@ From science to practice my work revolves around bridging the gap between causal
 In many instances data are collected at different points in time, where baseline information is gathered from a prior study and the outcome data are collected later.
 
 At the intersection of causal inference and record linkage I seek to develop statistical methods that propagates the uncertainty inherent in record linkage procedures to ensure reliable causal estimates.
+<br>
+<br>
+<br>
+
+<p>
+\(^{\star}\) <a href=https://www.amc.nl/web/home.htm>Amsterdam UMC</a>, 
+Epidemiology and Data Science, 
+<a href=https://www.bigstatistics.nl/>BigStatistics</a> 
+<br> 
+\(^{\star}\) Amsterdam Public Health, Methodology
+</p>
