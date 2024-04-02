@@ -8,7 +8,6 @@ profile:
   align: right
   image: KR.png
   image_circular: false # crops the image to make it circular
-  <p>\(^{\star}\) <a href=https://www.amc.nl/web/home.htm>Amsterdam UMC</a>, Epidemiology and Data Science, <a href=https://www.bigstatistics.nl/>BigStatistics</a> <br> \(^{\star}\) Amsterdam Public Health, Methodology</p>
   more_info: >
     <p>555 your office number</p>
     <p>123 your address street</p>
