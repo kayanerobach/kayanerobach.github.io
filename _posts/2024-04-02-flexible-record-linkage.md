@@ -5,7 +5,7 @@ date: 2024-04-02 11:46:00
 description: Stochastic Expectation Maximisation for combining information spread over two files
 tags: RL LatentModel PIVs StEM
 categories: sample-posts
-thumbnail: assets/img/9.jpg
+thumbnail: assets/img/FlexRL.png
 tikzjax: true
 ---
 
