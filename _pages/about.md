@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <div class="header-bar">
+subtitle: <div>
     <h3>(Կայանէ)</h3>
   </div> #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
