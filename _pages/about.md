@@ -29,11 +29,7 @@ In many instances data are collected at different points in time, where baseline
 
 At the intersection of causal inference and record linkage I seek to develop statistical methods that propagates the uncertainty inherent in record linkage procedures to ensure reliable causal estimates.
 
-{% if page.social %}
-  <div class="social">
-    <h5> Contact: </h5> <div class="contact-icons"> <h6> k dot c dot robach at amsterdamumc dot nl </h6> {% include social.liquid %}</div>
-  </div>
-{% endif %}
+<p> <b>Contact:</b> k dot c dot robach at amsterdamumc dot nl      Linkedin: <a Linkedin href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>      GitHub: <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a></p>
 
 <!-- ---
 layout: about
