@@ -10,9 +10,6 @@ profile:
   align: right
   image: KR.png
   image_circular: false # crops the image to make it circular
-  <br>
-  <br>
-  <br>
   more_info: >
     <br>
     <br>
@@ -23,6 +20,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+<br>
+<br>
+<br>
 From science to practice my work revolves around bridging the gap between causality theory and its practical applications, particularly in the challenging context of survival analysis, addressing the intricate nuances that arise when dealing with multiple datasets.
 
 In many instances data are collected at different points in time, where baseline information is gathered from a prior study and the outcome data are collected later.
