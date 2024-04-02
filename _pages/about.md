@@ -10,6 +10,9 @@ profile:
   align: right
   image: KR.png
   image_circular: false # crops the image to make it circular
+  <br>
+  <br>
+  <br>
   more_info: >
     <br>
     <br>
