@@ -31,5 +31,7 @@ At the intersection of causal inference and record linkage I seek to develop sta
 <br>
 <br>
 <br>
+<br>
+<br>
 
-$^{\star}$ PhD candidate in statistics at [Amsterdam UMC](https://www.amc.nl/web/home.htm), Epidemiology and Data Science, [BigStatistics](https://www.bigstatistics.nl/)
+PhD candidate in statistics at [Amsterdam UMC](https://www.amc.nl/web/home.htm), Epidemiology and Data Science, [BigStatistics](https://www.bigstatistics.nl/).
