@@ -35,4 +35,4 @@ At the intersection of causal inference and record linkage I seek to develop sta
 <br>
 <br>
 
-I am working in the [BigStatistics](https://www.bigstatistics.nl/) group of the department of Epidemiology and Data Science at the [Amsterdam UMC](https://www.amc.nl/web/home.htm). My PhD is being supervised by [Stéphanie van der Pas](https://www.stephanievanderpas.nl/), [Michel Hof](https://researchinformation.amsterdamumc.org/en/persons/michel-hof-2) and [Mark van de Wiel](https://www.bigstatistics.nl/mark-van-de-wiel/).
+My PhD research is being supervised by [Stéphanie van der Pas](https://www.stephanievanderpas.nl/), [Michel Hof](https://researchinformation.amsterdamumc.org/en/persons/michel-hof-2) and [Mark van de Wiel](https://www.bigstatistics.nl/mark-van-de-wiel/), in the [BigStatistics](https://www.bigstatistics.nl/) group of the department of Epidemiology and Data Science at the [Amsterdam UMC](https://www.amc.nl/web/home.htm).
