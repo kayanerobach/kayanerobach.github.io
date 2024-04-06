@@ -9,7 +9,17 @@ thumbnail: assets/img/FlexRL.png
 tikzjax: true
 ---
 
-This is an example post with blablabla
+Combining data from various sources such as observational studies and municipality registries or hospital databases empowers researchers to explore innovative questions and improve models. However, the lack of a unique identifier often poses challenges. Natural problems like counting casualties require distinguishing individuals in registers that may contain duplicates when bodies are listed by several organisations. Conducting healthcare longitudinal studies require follow up information that is often concealed due to privacy considerations. 
+
+Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g. initials, birth year, zipcode). The complexity of this problem stems from the sub-par reliability of those variables and their low discriminative power, due to limited unique values. Furthermore, since everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file. Linkage decisions are thus interdependent, adding complexity to the task. 
+
+Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generating process, at the expense of substantial computational overhead and reduced flexibility. 
+
+This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Addressing temporal dynamics of zipcode for instance holds importance in healthcare longitudinal studies. In the particular case of survival analysis long term follow-up are crucial, which increases the probability to move. Our approach balances computational scalability and accuracy, estimating the linkage by maximum likelihood using a Stochastic Expectation Maximisation algorithm on a latent variable model. 
+
+In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study. 
+
+The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage' %}
@@ -46,6 +56,6 @@ This is an example post with blablabla
         \plate [inner sep=.5cm, yshift=.2cm] {data B} {(HB)(GB)} {$j = 1, \dots, \nB$};
         \plate [inner sep=.25cm, yshift=.2cm] {data linked} {(HA)(alpha)(HB)} {$(i,j)$};
     \end{tikzpicture}
-    \caption{Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem.}
+    \caption{Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.}
 \end{figure}
 </script>
