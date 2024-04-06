@@ -25,6 +25,7 @@ Record linkage procedures determine whether pairs of observations collected on d
 
 Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generating process, at the expense of substantial computational overhead and reduced flexibility.
 
+<div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
 \node[draw=black, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
@@ -49,7 +50,8 @@ Existing methodologies typically involve a compromise between computational effi
 \path [-stealth] (phi) edge (GB);
 \end{tikzpicture}
 </script>
-*** Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM. ***
+*Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.*
+</div>
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Addressing temporal dynamics of zipcode for instance holds importance in healthcare longitudinal studies. In the particular case of survival analysis long term follow-up are crucial, which increases the probability to move. Our approach balances computational scalability and accuracy, estimating the linkage by maximum likelihood using a Stochastic Expectation Maximisation algorithm on a latent variable model.
 
