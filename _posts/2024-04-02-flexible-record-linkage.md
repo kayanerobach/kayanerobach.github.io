@@ -9,16 +9,6 @@ thumbnail: assets/img/FlexRL.png
 tikzjax: true
 ---
 
-This is an example post with TikZ code. TikZJax converts script tags (containing TikZ code) into SVGs.
-
-<script type="text/tikz">
-\begin{tikzpicture}
-    \draw[red,fill=black!60!red] (0,0) circle [radius=1.5];
-    \draw[green,fill=black!60!green] (0,0) circle [x radius=1.5cm, y radius=10mm];
-    \draw[blue,fill=black!60!blue] (0,0) circle [x radius=1cm, y radius=5mm, rotate=30];
-\end{tikzpicture}
-</script>
-
 Combining data from various sources such as observational studies and municipality registries or hospital databases empowers researchers to explore innovative questions and improve models. However, the lack of a unique identifier often poses challenges. Natural problems like counting casualties require distinguishing individuals in registers that may contain duplicates when bodies are listed by several organisations. Conducting healthcare longitudinal studies require follow up information that is often concealed due to privacy considerations.
 
 Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g. initials, birth year, zipcode). The complexity of this problem stems from the sub-par reliability of those variables and their low discriminative power, due to limited unique values. Furthermore, since everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file. Linkage decisions are thus interdependent, adding complexity to the task.
@@ -28,8 +18,8 @@ Existing methodologies typically involve a compromise between computational effi
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
 To estimate the linkage, we build a statistical model that leverages the latent representation ($H^A$ and $H^B$) of the partially identifying information embedded in the data generation process ($G^A$ and $G^B$), and ultimately derive a linkage estimate ($\Delta$). We estimate the model parameters: $\gamma, \eta, \alpha, \phi$, represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
-
 <br>
+
 <div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
