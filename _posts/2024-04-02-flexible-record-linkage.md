@@ -23,7 +23,7 @@ To estimate the linkage, we build a statistical model that leverages the latent 
 <div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
-\node[draw=munsellblue-color, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
 \node[draw, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
 \node[draw, minimum size=1cm] (eta) at (0,0) {$\eta$};
 \node[draw, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
