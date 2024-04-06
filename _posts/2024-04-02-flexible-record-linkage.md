@@ -29,6 +29,7 @@ This project proposes a flexible method to determine the set of links, that adap
 
 To estimate the linkage, we build a statistical model that leverages the latent representation ($H^A$ and $H^B$) of the partially identifying information embedded in the data generation process ($G^A$ and $G^B$), and ultimately derive a linkage estimate ($\Delta$). We estimate the model parameters: $\gamma, \eta, \alpha, \phi$, represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
 
+<br>
 <div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
@@ -57,6 +58,7 @@ To estimate the linkage, we build a statistical model that leverages the latent 
 <i>Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</i>
 </div>
 
+<br>
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
