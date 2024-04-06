@@ -15,6 +15,34 @@ Record linkage procedures determine whether pairs of observations collected on d
 
 Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generating process, at the expense of substantial computational overhead and reduced flexibility.
 
+<script type="text/tikz">
+    \begin{tikzpicture}
+        \node[draw, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
+        \node[shape=circle, dashed, draw, minimum size=1cm] (delta) at (0,2) {$\boldsymbol{\Delta}$};
+        \node[draw, minimum size=1cm] (eta) at (0,0) {$\boldsymbol{\eta}$};
+        \node[draw, minimum size=1cm] (alpha) at (0,-2) {$\boldsymbol{\alpha}$};
+        \node[shape=circle, dashed, draw, minimum size=1cm] (HA) at (-3,-2) {$\textbf{H}^{\mathcal{A}}$};
+        \node[shape=circle, dashed, draw, minimum size=1cm] (HB) at (3,-2) {$\textbf{H}^{\mathcal{B}}$};
+        \node[draw, minimum size=1cm] (phi) at (0,-4) {$\boldsymbol{\phi}$};
+        \node[shape=circle, draw, minimum size=1cm] (GA) at (-4.5,-4) {$\textbf{G}^{\mathcal{A}}$};
+        \node[shape=circle, draw, minimum size=1cm] (GB) at (4.5,-4) {$\textbf{G}^{\mathcal{B}}$};
+        \path [-stealth] (gamma) edge (delta);
+        \path [-stealth] (delta) edge (HA);
+        \path [-stealth] (delta) edge (HB);
+        \path [-stealth] (eta) edge (HA);
+        \path [-stealth] (eta) edge (HB);
+        \path [-stealth] (alpha) edge (HA);
+        \path [-stealth] (alpha) edge (HB);
+        \path [-stealth] (HA) edge (GA);
+        \path [-stealth] (HB) edge (GB);
+        \path [-stealth] (phi) edge (GA);
+        \path [-stealth] (phi) edge (GB);
+        \plate [inner sep=.5cm, yshift=.2cm] {data A} {(HA)(GA)} {$i = 1, \dots, \nA$};
+        \plate [inner sep=.5cm, yshift=.2cm] {data B} {(HB)(GB)} {$j = 1, \dots, \nB$};
+        \plate [inner sep=.25cm, yshift=.2cm] {data linked} {(HA)(alpha)(HB)} {$(i,j)$};
+    \end{tikzpicture}
+</script>
+
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Addressing temporal dynamics of zipcode for instance holds importance in healthcare longitudinal studies. In the particular case of survival analysis long term follow-up are crucial, which increases the probability to move. Our approach balances computational scalability and accuracy, estimating the linkage by maximum likelihood using a Stochastic Expectation Maximisation algorithm on a latent variable model.
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
