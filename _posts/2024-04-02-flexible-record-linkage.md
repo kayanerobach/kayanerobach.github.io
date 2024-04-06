@@ -28,15 +28,15 @@ Existing methodologies typically involve a compromise between computational effi
 <div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
-\node[draw=black, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
-\node[draw=black, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
-\node[draw=black, minimum size=1cm] (eta) at (0,0) {$\eta$};
-\node[draw=black, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
-\node[shape=circle, dashed, draw=black, minimum size=1cm] (HA) at (-3,-2) {$H_A$};
-\node[shape=circle, dashed, draw=black, minimum size=1cm] (HB) at (3,-2) {$H_B$};
-\node[draw=black, minimum size=1cm] (phi) at (0,-4) {$\phi$};
-\node[shape=circle, draw=black, minimum size=1cm] (GA) at (-4.5,-4) {$G_A$};
-\node[shape=circle, draw=black, minimum size=1cm] (GB) at (4.5,-4) {$G_B$};
+\node[draw, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
+\node[draw, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
+\node[draw, minimum size=1cm] (eta) at (0,0) {$\eta$};
+\node[draw, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
+\node[shape=circle, dashed, draw, minimum size=1cm] (HA) at (-3,-2) {$H_A$};
+\node[shape=circle, dashed, draw, minimum size=1cm] (HB) at (3,-2) {$H_B$};
+\node[draw, minimum size=1cm] (phi) at (0,-4) {$\phi$};
+\node[shape=circle, draw, minimum size=1cm] (GA) at (-4.5,-4) {$G_A$};
+\node[shape=circle, draw, minimum size=1cm] (GB) at (4.5,-4) {$G_B$};
 \path [-stealth] (gamma) edge (delta);
 \path [-stealth] (delta) edge (HA);
 \path [-stealth] (delta) edge (HB);
@@ -50,7 +50,7 @@ Existing methodologies typically involve a compromise between computational effi
 \path [-stealth] (phi) edge (GB);
 \end{tikzpicture}
 </script>
-*Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.*
+<i>Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</i>
 </div>
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Addressing temporal dynamics of zipcode for instance holds importance in healthcare longitudinal studies. In the particular case of survival analysis long term follow-up are crucial, which increases the probability to move. Our approach balances computational scalability and accuracy, estimating the linkage by maximum likelihood using a Stochastic Expectation Maximisation algorithm on a latent variable model.
