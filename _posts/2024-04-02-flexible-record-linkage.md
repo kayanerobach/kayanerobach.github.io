@@ -56,7 +56,7 @@ represented as input nodes on the probabilistic graphical model above, using a S
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (phi) at (0,-4) {$\phi$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
-\path [-stealth] (gamma) edge (delta);
+\draw [{rgb:red,0;green,147;blue,175}, -stealth] (gamma) -- (delta);
 \path [-stealth] (delta) edge (HA);
 \path [-stealth] (delta) edge (HB);
 \path [-stealth] (eta) edge (HA);
