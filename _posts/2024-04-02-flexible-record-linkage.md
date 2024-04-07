@@ -63,6 +63,10 @@ In the paper, we illustrate the ability of our methodology to connect observatio
 <a href="http://arxiv.org/pdf/1403.0211.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
 </div>
 
+<div class="links">
+<a href="assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+</div>
+
 <div class="container-link-button">
 <a href="http://arxiv.org/pdf/1403.0211.pdf" target="_blank" class="btncv z-depth-0">doc</a>
 </div>
