@@ -6,7 +6,6 @@ description: Stochastic Expectation Maximisation for combining information sprea
 tags: RL LatentModel PIVs StEM
 categories: sample-posts
 thumbnail: assets/img/FlexRL.png
-cv_pdf: example_pdf.pdf
 tikzjax: true
 ---
 
@@ -59,23 +58,11 @@ To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each 
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
-<div class="links">
-<a href="http://arxiv.org/pdf/1403.0211.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-</div>
-
-<div class="links">
-<a href="{{ 'example_pdf.pdf' | prepend: 'assets/pdf/' | relative_url}}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-</div>
-
-<div class="container-link-button">
-<a href="http://arxiv.org/pdf/1403.0211.pdf" target="_blank" class="btncv z-depth-0">doc</a>
-
 <div>
 <a
 href="http://arxiv.org/pdf/1403.0211.pdf"
 target="_blank"
 rel="noopener noreferrer"
-class="float-right"
 ><i class="fa-solid fa-file-pdf"></i
 ></a>
 </div>
