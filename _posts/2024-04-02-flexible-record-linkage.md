@@ -72,7 +72,7 @@ In the paper, we illustrate the ability of our methodology to connect observatio
 
 <div>
 <a
-href="{{ 'example_pdf.pdf' | prepend: 'assets/pdf/' | relative_url}}"
+href="http://arxiv.org/pdf/1403.0211.pdf"
 target="_blank"
 rel="noopener noreferrer"
 class="float-right"
