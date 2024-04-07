@@ -6,7 +6,7 @@ description: Stochastic Expectation Maximisation for combining information sprea
 tags: RL LatentModel PIVs StEM
 categories: sample-posts
 thumbnail: assets/img/FlexRL.png
-paper_pdf: example_pdf.pdf
+cv_pdf: example_pdf.pdf
 tikzjax: true
 ---
 
