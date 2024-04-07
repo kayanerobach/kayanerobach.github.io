@@ -18,11 +18,7 @@ Existing methodologies typically involve a compromise between computational effi
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
-Unless a unique identifier is provided in the data sources, the linkage matrix $\boldsymbol{\Delta}$ should be estimated based on pseudonymised information. For this purpose, we build a statistical model that leverage the latent representation of the partially identifying information embedded in the data generating process, and ultimately derive a linkage estimate. We estimate the model parameters $\boldsymbol{\theta} = \big\{ \gamma, \boldsymbol{\eta}, \boldsymbol{\alpha}, \boldsymbol{\phi} \big\}$, represented as input nodes on the probabilistic graphical model in \cref{fig:DAG_RL}, using a Stochastic Expectation Maximisation (SEM or StEM) algorithm. We sketch the outline of the methodology hereafter and flesh it out in the subsequent sections, expanding on the model and its assumptions.
-
 To estimate the common set of records, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and ultimately derive a linkage estimate. We estimate the model parameters represented as input nodes on the probabilistic graphical model hereafter, using a Stochastic Expectation Maximisation algorithm.
-
-To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each PIV. From the observed registered data $$G^A$$ and $$G^B,$$ we generate underlying credible true values $$H^A$$ and $$H^B$$ factoring in potential missing values and mistakes with $$\phi.$$ By comparing the latent information generated for the records supposedly referring to the same entities, we account for changes between the information collected in file $$A$$ and in file $$B$$ with $$\alpha.$$ (The place of residence is likely to change through the years for instance). We then use blocking techniques to build plausible pairs, that are those which connect records when their true values agree together for stable PIVs (which are thought not to evolve over time). We evaluate the contribution of each candidate pair to the complete data likelihood and decide whether to accept or reject it. We finally fit the probability for a record in file $$A$$ to form a link with a record in file $$B$$ with $$\gamma.$$ We sketch the outline of the methodology in the probabilistic graphical model below:
 <br>
 
 <div class="exampletest">
@@ -59,10 +55,16 @@ To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each 
 </div>
 
 <br>
+To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each PIV. From the observed registered data $$G^A$$ and $$G^B,$$ we generate underlying credible true values $$H^A$$ and $$H^B$$ factoring in potential missing values and mistakes with $$\phi.$$ By comparing the latent information generated for the records supposedly referring to the same entities, we account for changes between the information collected in file $$A$$ and in file $$B$$ with $$\alpha.$$ (The place of residence is likely to change through the years for instance). We then use blocking techniques to build plausible pairs, that are those which connect records when their true values agree together for stable PIVs (which are thought not to evolve over time). We evaluate the contribution of each candidate pair to the complete data likelihood and decide whether to accept or reject it. We finally fit the probability for a record in file $$A$$ to form a link with a record in file $$B$$ with $$\gamma.$$ We sketch the outline of the methodology in the probabilistic graphical model above.
+
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
 <div class="links">
 <a href="http://arxiv.org/pdf/1403.0211.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+</div>
+
+<div class="container-link-button">
+<a href="http://arxiv.org/pdf/1403.0211.pdf" target="_blank" class="btncv z-depth-0">doc</a>
 </div>
 
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
