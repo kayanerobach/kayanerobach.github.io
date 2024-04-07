@@ -70,5 +70,5 @@ In the paper, we illustrate the ability of our methodology to connect observatio
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage' %}
+    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage/tree/main/FlexRL' %}
 </div>
