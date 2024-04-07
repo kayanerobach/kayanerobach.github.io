@@ -17,7 +17,15 @@ Existing methodologies typically involve a compromise between computational effi
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
-To estimate the linkage, we build a statistical model that leverages the latent representation ($H^A$ and $H^B$) of the partially identifying information embedded in the data generation process ($G^A$ and $G^B$), and ultimately derive a linkage estimate ($\Delta$). We estimate the model parameters: $\gamma, \eta, \alpha, \phi$, represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
+To estimate the linkage, we build a statistical model that leverages the latent representation ($H^A$ and $H^B$) of the partially identifying information embedded in the data generation process ($G^A$ and $G^B$), and ultimately derive a linkage estimate 
+$$
+\Delta.
+$$
+We estimate the model parameters: 
+$$
+\gamma, \eta, \alpha, \phi,
+$$
+represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
 <br>
 
 <div align=center>
@@ -54,7 +62,5 @@ In the paper, we illustrate the ability of our methodology to connect observatio
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    <div align=center>
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage' %}
-    </div>
 </div>
