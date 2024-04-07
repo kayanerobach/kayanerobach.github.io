@@ -11,21 +11,19 @@ tikzjax: true
 
 Combining data from various sources such as observational studies and municipality registries or hospital databases empowers researchers to explore innovative questions and improve models. However, the lack of a unique identifier often poses challenges. Natural problems like counting casualties require distinguishing individuals in registers that may contain duplicates when bodies are listed by several organisations. Conducting healthcare longitudinal studies require follow up information that is often concealed due to privacy considerations.
 
-Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g. initials, birth year, zipcode). The complexity of this problem stems from the sub-par reliability of those variables and their low discriminative power, due to limited unique values. Furthermore, since everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file. Linkage decisions are thus interdependent, adding complexity to the task.
+Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g. initials, birth year, zipcode), herafter denoted PIVs. The complexity of this problem stems from the sub-par reliability of those variables and their low discriminative power, due to limited unique values. Furthermore, since everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file. Linkage decisions are thus interdependent, adding complexity to the task.
 
 Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generating process, at the expense of substantial computational overhead and reduced flexibility.
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
-To estimate the linkage, we build a statistical model that leverages the latent representation (
+Unless a unique identifier is provided in the data sources, the linkage matrix $\boldsymbol{\Delta}$ should be estimated based on pseudonymised information. For this purpose, we build a statistical model that leverage the latent representation of the partially identifying information embedded in the data generating process, and ultimately derive a linkage estimate. We estimate the model parameters $\boldsymbol{\theta} = \big\{ \gamma, \boldsymbol{\eta}, \boldsymbol{\alpha}, \boldsymbol{\phi} \big\}$, represented as input nodes on the probabilistic graphical model in \cref{fig:DAG_RL}, using a Stochastic Expectation Maximisation (SEM or StEM) algorithm. We sketch the outline of the methodology hereafter and flesh it out in the subsequent sections, expanding on the model and its assumptions. 
+
+To wit, the parameter 
 $$
-H^A
-$$
-and
-$$
-H^B
-$$
-) of the partially identifying information (
+\eta
+$$ 
+aligns with the multinomial distribution of each PIV. From the observed registered data
 $$
 G^A
 $$
@@ -33,19 +31,48 @@ and
 $$
 G^B
 $$
-) embedded in the data generation process, and ultimately derive a linkage estimate 
+, we generate underlying credible true values
 $$
-\Delta.
+H^A
 $$
-We estimate the model parameters: 
+and
 $$
-\gamma, \eta, \alpha, \phi,
+H^B
 $$
-represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
+factoring in potential missing values and mistakes with 
+$$
+\phi.
+$$
+By comparing the latent information generated for the records supposedly referring to the same entities, we account for changes between the information collected in file
+$$
+A
+$$
+and in file
+$$
+B
+$$ with 
+$$
+\alpha.
+$$
+For instance, the place of residence is likely to change through the years. We then use blocking techniques to build plausible pairs, that are those which connect records when their true values agree together for stable PIVs (which are thought not to evolve over time). We evaluate the contribution of each candidate pair to the complete data likelihood and decide whether to accept or reject it. We finally fit the probability for a record in file
+$$
+A
+$$
+to form a link with a record in file
+$$
+B
+$$
+with 
+$$
+\gamma.
+$$
+
+To estimate the linkage, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and ultimately derive a linkage estimate. We estimate the model parameters represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
 <br>
 
 <div class="exampletest">
 <div align=center>
+<br>
 <script type="text/tikz">
 \begin{tikzpicture}
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
@@ -70,7 +97,8 @@ represented as input nodes on the probabilistic graphical model above, using a S
 \path [-stealth] (phi) edge (GB);
 \end{tikzpicture}
 </script>
-<i>Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</i>
+<i><font color="#0093af">Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</font></i>
+<br>
 </div>
 </div>
 
