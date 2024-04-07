@@ -17,7 +17,23 @@ Existing methodologies typically involve a compromise between computational effi
 
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
-To estimate the linkage, we build a statistical model that leverages the latent representation ($H^A$ and $H^B$) of the partially identifying information embedded in the data generation process ($G^A$ and $G^B$), and ultimately derive a linkage estimate 
+To estimate the linkage, we build a statistical model that leverages the latent representation (
+$$
+H^A
+$$
+and
+$$
+H^B
+$$
+) of the partially identifying information embedded in the data generation process (
+$$
+G^A
+$$
+and
+$$
+G^B
+$$
+), and ultimately derive a linkage estimate 
 $$
 \Delta.
 $$
@@ -40,7 +56,7 @@ represented as input nodes on the probabilistic graphical model above, using a S
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (phi) at (0,-4) {$\phi$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
-\path [-stealth, draw={rgb:red,0;green,147;blue,175}] (gamma) edge (delta);
+\path [-stealth] (gamma) edge (delta);
 \path [-stealth] (delta) edge (HA);
 \path [-stealth] (delta) edge (HB);
 \path [-stealth] (eta) edge (HA);
