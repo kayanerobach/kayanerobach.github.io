@@ -31,16 +31,16 @@ represented as input nodes on the probabilistic graphical model above, using a S
 <div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\textcolor{blue}{\gamma}$};
-\node[draw, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
-\node[draw, minimum size=1cm] (eta) at (0,0) {$\eta$};
-\node[draw, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
-\node[shape=circle, dashed, draw, minimum size=1cm] (HA) at (-3,-2) {$H^A$};
-\node[shape=circle, dashed, draw, minimum size=1cm] (HB) at (3,-2) {$H^B$};
-\node[draw, minimum size=1cm] (phi) at (0,-4) {$\phi$};
-\node[shape=circle, draw, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
-\node[shape=circle, draw, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
-\path [-stealth] (gamma) edge (delta);
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\textcolor{{rgb:red,0;green,147;blue,175}}{\gamma}$};
+\node[draw={rgb:red,0;green,147;blue,175}, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (eta) at (0,0) {$\eta$};
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
+\node[shape=circle, dashed, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (HA) at (-3,-2) {$H^A$};
+\node[shape=circle, dashed, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (HB) at (3,-2) {$H^B$};
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (phi) at (0,-4) {$\phi$};
+\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
+\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
+\path [-stealth, draw={rgb:red,0;green,147;blue,175}] (gamma) edge (delta);
 \path [-stealth] (delta) edge (HA);
 \path [-stealth] (delta) edge (HB);
 \path [-stealth] (eta) edge (HA);
