@@ -25,7 +25,7 @@ and
 $$
 H^B
 $$
-) of the partially identifying information embedded in the data generation process (
+) of the partially identifying information (
 $$
 G^A
 $$
@@ -33,7 +33,7 @@ and
 $$
 G^B
 $$
-), and ultimately derive a linkage estimate 
+) embedded in the data generation process, and ultimately derive a linkage estimate 
 $$
 \Delta.
 $$
@@ -44,11 +44,12 @@ $$
 represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
 <br>
 
-<div class="example">
+<div class="exampletest">
+<div align=center>
 <script type="text/tikz">
 \begin{tikzpicture}
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
-\node[draw={rgb:red,0;green,147;blue,175}, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
+\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (eta) at (0,0) {$\eta$};
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
 \node[shape=circle, dashed, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (HA) at (-3,-2) {$H^A$};
@@ -70,6 +71,7 @@ represented as input nodes on the probabilistic graphical model above, using a S
 \end{tikzpicture}
 </script>
 <i>Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</i>
+</div>
 </div>
 
 <br>
