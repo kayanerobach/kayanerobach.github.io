@@ -44,10 +44,10 @@ $$
 represented as input nodes on the probabilistic graphical model above, using a Stochastic Expectation Maximisation algorithm. We sketch the outline of the methodology hereafter:
 <br>
 
-<div align=center>
+<div class="example">
 <script type="text/tikz">
 \begin{tikzpicture}
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\textcolor{{rgb:red,0;green,147;blue,175}}{\gamma}$};
+\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
 \node[draw={rgb:red,0;green,147;blue,175}, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (eta) at (0,0) {$\eta$};
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
@@ -56,7 +56,7 @@ represented as input nodes on the probabilistic graphical model above, using a S
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (phi) at (0,-4) {$\phi$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
 \node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
-\path [-stealth] (gamma) -- (delta);
+\path [-stealth] (gamma) edge (delta);
 \path [-stealth] (delta) edge (HA);
 \path [-stealth] (delta) edge (HB);
 \path [-stealth] (eta) edge (HA);
@@ -76,6 +76,7 @@ represented as input nodes on the probabilistic graphical model above, using a S
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
+
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage' %}
