@@ -58,7 +58,7 @@ To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each 
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
-<div>
+<div font-size=12rem>
 <a
 href="http://arxiv.org/pdf/1403.0211.pdf"
 target="_blank"
@@ -66,6 +66,7 @@ rel="noopener noreferrer"
 ><i class="fa-solid fa-file-pdf"></i
 ></a>
 </div>
+<br>
 
 The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
 
