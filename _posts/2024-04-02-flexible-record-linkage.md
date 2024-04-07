@@ -99,6 +99,7 @@ To estimate the linkage, we build a statistical model that leverages the latent 
 </script>
 <i><font color="#0093af">Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</font></i>
 <br>
+<br>
 </div>
 </div>
 
