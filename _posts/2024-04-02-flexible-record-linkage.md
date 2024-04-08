@@ -58,25 +58,11 @@ To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each 
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
-<div>
-  <a href="http://arxiv.org/pdf/1403.0211.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-pdf" style="font-size: 24px;"></i>
+<br>
+<div style="margin-left: 10px;">
+  <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-file-pdf" style="font-size: 84px"></i>
   </a>
-</div>
-
-<div>
-  <a href="http://arxiv.org/pdf/1403.0211.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-pdf" style="font-size: 24px"></i>
-  </a>
-</div>
-
-<div>
-<a
-href="http://arxiv.org/pdf/1403.0211.pdf"
-target="_blank"
-rel="noopener noreferrer"
-><i class="fa-solid fa-file-pdf"></i
-></a>
 </div>
 <br>
 
