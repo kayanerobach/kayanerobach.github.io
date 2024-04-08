@@ -8,7 +8,7 @@ categories: sample-posts
 thumbnail: assets/img/rmt_theoreticalecology.png
 ---
 
-This is an example post with blablabla
+This is an example post with blablabla. More to come.
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RMTTheoreticalEcology' %}

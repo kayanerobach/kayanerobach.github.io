@@ -13,8 +13,6 @@ Combining data from various sources such as observational studies and municipali
 
 Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g. initials, birth year, zipcode), herafter denoted PIVs. The complexity of this problem stems from the sub-par reliability of those variables and their low discriminative power, due to limited unique values. Furthermore, since everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file. Linkage decisions are thus interdependent, adding complexity to the task.
 
-Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generating process, at the expense of substantial computational overhead and reduced flexibility.
-
 This project proposes a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics for instance holds importance in healthcare longitudinal studies; in the particular case of survival analysis long term follow-up are crucial, which increases the probability to move.
 
 To estimate the common set of records, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and ultimately derive a linkage estimate. We estimate the model parameters represented as input nodes on the probabilistic graphical model hereafter, using a Stochastic Expectation Maximisation algorithm.
@@ -59,7 +57,7 @@ To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
 <br>
-<div style="margin-left: 10px;">
+<div style="margin-left: 9px;">
   <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-pdf" style="font-size: 84px"></i>
   </a>
