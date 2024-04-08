@@ -1351,11 +1351,11 @@
 .#{$fa-css-prefix}.#{$fa-css-prefix}-file-pdf-o {
   font-family: "Font Awesome 6 Free";
   font-weight: 400;
-  font-size:20rem;
+  font-size: 20rem;
 }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-file-pdf-o:before {
   content: unquote('"#{ $fa-var-file-pdf }"');
-  font-size:20rem;
+  font-size: 20rem;
 }
 
 .#{$fa-css-prefix}.#{$fa-css-prefix}-file-word-o {
