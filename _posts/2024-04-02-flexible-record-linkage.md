@@ -13,10 +13,11 @@ Combining data from various sources such as observational studies and municipali
 
 Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual using partially identifying variables (e.g. initials, birth year, zipcode), herafter denoted PIVs. The complexity of this problem stems from the sub-par reliability of the PIVs used to link records and their limited number of unique values. Furthermore, because everyone is often uniquely represented in each file, records from one file can maximally be linked with one record in the other file, making the linkage decisions interdependent.
 
-We propose a flexible method to combine observations from two overlapping data sets, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics holds importance in healthcare longitudinal studies; in the particular case of survival analysis, long term follow-up are crucial, which increases the probability to move.
+We propose a Stochastic Expectation Maximisation to combine observations from two overlapping data sets, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics holds importance in healthcare longitudinal studies; in the particular case of survival analysis, long term follow-up are crucial, which increases the probability to move.
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 
+<br>
 <div style="margin-left: 30px;">
   <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-pdf" style="font-size: 74px;"></i>
@@ -30,6 +31,8 @@ The proposed algorithm FlexRL is available in R. The source code, supplementary 
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage/tree/main/FlexRL' %}
 </div>
 
+<br>
+<br>
 <i>More technical details:</i>
 
 To estimate the common set of records, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and derive a probabilistic estimate that allows for inference. We estimate the model parameters represented as input nodes on the probabilistic graphical model hereafter, using a Stochastic Expectation Maximisation algorithm.
