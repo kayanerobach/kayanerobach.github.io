@@ -16,7 +16,6 @@ Record linkage procedures determine whether pairs of observations collected on d
 We propose a Stochastic Expectation Maximisation to combine observations from two overlapping data sets, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics holds importance in healthcare longitudinal studies; in the particular case of survival analysis, long term follow-up are crucial, which increases the probability to move.
 
 In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
-
 <br>
 <div style="margin-left: 30px;">
   <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
@@ -24,9 +23,8 @@ In the paper, we illustrate the ability of our methodology to connect observatio
   </a>
 </div>
 <br>
-
 The proposed algorithm FlexRL is available in R. The source code, supplementary materials and data sets are available on GitHub.
-
+<br>
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage/tree/main/FlexRL' %}
 </div>
