@@ -15,6 +15,23 @@ Record linkage procedures determine whether pairs of observations collected on d
 
 We propose a flexible method to combine observations from two overlapping data sets, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics holds importance in healthcare longitudinal studies; in the particular case of survival analysis, long term follow-up are crucial, which increases the probability to move.
 
+In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
+
+<div style="margin-left: 30px;">
+  <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-file-pdf" style="font-size: 74px;"></i>
+  </a>
+</div>
+<br>
+
+The proposed algorithm FlexRL is available in R. The source code, supplementary materials and data sets are available on GitHub.
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage/tree/main/FlexRL' %}
+</div>
+
+<i>More technical details:</i>
+
 To estimate the common set of records, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and derive a probabilistic estimate that allows for inference. We estimate the model parameters represented as input nodes on the probabilistic graphical model hereafter, using a Stochastic Expectation Maximisation algorithm.
 <br>
 
@@ -53,18 +70,3 @@ To estimate the common set of records, we build a statistical model that leverag
 
 <br>
 To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each PIV. From the observed registered data $$G^A$$ and $$G^B,$$ we generate underlying credible true values $$H^A$$ and $$H^B$$ factoring in potential missing values and mistakes with $$\phi.$$ By comparing the latent information generated for the records supposedly referring to the same entities, we account for changes between the information collected in file $$A$$ and in file $$B$$ with $$\alpha.$$ (The place of residence is likely to change through the years for instance). We then use blocking techniques to build plausible pairs, that are those which connect records when their true values agree together for stable PIVs (which are thought not to evolve over time). We evaluate the contribution of each candidate pair to the complete data likelihood and decide whether to accept or reject it. We finally fit the probability for a record in file $$A$$ to form a link with a record in file $$B$$ with $$\gamma.$$ We sketch the outline of the methodology in the probabilistic graphical model above.
-
-In the paper, we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
-
-<div style="margin-left: 9px;">
-  <a href="https://info.arxiv.org/help/submit_tex.html" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-pdf" style="font-size: 74px;"></i>
-  </a>
-</div>
-<br>
-
-The proposed algorithm FlexRL is available in R and the code is available on github, as well as complementary materials:
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RecordLinkage/tree/main/FlexRL' %}
-</div>
