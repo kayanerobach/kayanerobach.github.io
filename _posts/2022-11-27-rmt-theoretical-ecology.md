@@ -49,23 +49,23 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
 
 - _midpoint matrix_ $$A_c$$:
   <br>
-  the midpoint matrix $$A_c$$ of the interval matrix $$[A_c \pm \Delta]$$ is singular.
+  the midpoint matrix $$A_c$$ of the interval matrix $$[A_c \pm \Delta]$$ is singular
   <br>
 - _diagonal condition_ [Theorem 2.1 from Oettli and Prager](https://doi.org/10.1137/S0895479896310743):
   <br>
-  $$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$.
+  $$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$
   <br>
 - _steepest determinant descent_ [Algorithm 5.1](<https://doi.org/10.1016/0024-3795(89)90004-9>):
   <br>
-  investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval).
+  investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval)
   <br>
 - _two Qz-matrices_ [Theorem 4.3](https://doi.org/10.1137/S0895479896313978):
   <br>
-  the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$$ and $$diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$.
+  the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$$ and $$diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$
   <br>
 - _main algorithm_ [Theorem 2.2 - find the singular matrix](https://doi.org/10.1137/0614007):
   <br>
-  loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form.
+  loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form
   <br>
 - _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
   <br>
@@ -80,7 +80,7 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
 
 - _Beeck's condition_ [Corollary 3.2 from Beeck](https://doi.org/10.1137/S0895479896310743):
   <br>
-  $$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular).
+  $$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular)
   <br>
 - _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
   <br>
@@ -92,9 +92,9 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
     <br>
 - _two Qz-matrices_ [Theorem 4.3](https://doi.org/10.1137/S0895479896313978):
   <br>
-  the linear programming problem $$(\star)$$ is bounded for all $$z \in \{ \pm 1 \}^n$$.
+  the linear programming problem $$(\star)$$ is bounded for all $$z \in \{ \pm 1 \}^n$$
   <br>
 - _main algorithm_ [Theorem 2.2 - all matrices are non singular](https://doi.org/10.1137/0614007):
   <br>
-  loop on $$\{ \pm 1 \}^n$$ to check there is no singular matrix in the whole interval. This last track is the most expensive since the algorithm will investigate the values of the sign real spectral radius.
+  loop on $$\{ \pm 1 \}^n$$ to check there is no singular matrix in the whole interval (this is the most expensive track since the algorithm will investigate the values of the sign real spectral radius)
   <br>
