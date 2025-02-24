@@ -24,7 +24,7 @@ theoretical ecology.
 <br>
 <div style="margin-left: 30px;">
   <a href="/assets/pdf/RMTprez.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-projector" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-subtitles" style="font-size: 74px;"></i>
   </a> 
 </div>
 <br>
