@@ -3,16 +3,15 @@
 
 @article{robachetal2025,
   title={A flexible model for {R}ecord {L}inkage},
-  author={Robach, K. and {van der Pas}, S. and {van de Wiel}, M. and Hof, M.},
-  journal={Statistics in Medicine},
+  author={Robach, K. and {van der Pas}, S. L. and {van de Wiel}, M. A. and Hof, M. H.},
+  journal={Journal of the Royal Statistical Society Series C: Applied Statistics},
   volume={},
   number={},
   pages={},
   bibtex_show={true},
-  abstract={Combining data from various sources empowers researchers to explore innovative questions, including those raised by tallying casualties and conducting healthcare monitoring studies. However, the lack of a unique identifier often poses challenges. Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual (referred to as links) using partially identifying variables (e.g.\ initials, birth year, zip code). Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generation process, at the expense of substantial computational overhead and reduced flexibility. We propose a flexible method to determine the set of links, that adapts to varying data complexities, addressing registration errors, including inaccuracies and missing values, and accommodating changes of the identifying information over time. Our approach balances computational scalability and accuracy, estimating the linkage by maximum likelihood using a Stochastic Expectation Maximisation algorithm on a latent variable model. We illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study. The proposed algorithm FlexRL is implemented and available in an open source R package.},
+  abstract={Combining data from various sources empowers researchers to explore innovative questions, for example those raised by conducting healthcare monitoring studies. However, the lack of a unique identifier often poses challenges. Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual using partially identifying variables (e.g. birth year, postal code). Existing methodologies typically involve a compromise between computational efficiency and accuracy. Traditional approaches simplify this task by condensing information, yet they neglect dependencies among linkage decisions and disregard the one-to-one relationship required to establish coherent links. Modern approaches offer a comprehensive representation of the data generation process, at the expense of computational overhead and reduced flexibility. We propose a flexible method, that adapts to varying data complexities, addressing registration errors and accommodating changes of the identifying information over time. Our approach balances accuracy and scalability, estimating the linkage using a Stochastic Expectation Maximisation algorithm on a latent variable model. We illustrate the ability of our methodology to connect observations using large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study. The proposed algorithm FlexRL is implemented and available in an open source R package.},
   year={2025},
-  publisher={Wiley Online Library},
   preview={FlexRL.png},
-  code={https://github.com/robachowyk/RecordLinkage/tree/main/FlexRL},
+  code={https://cran.r-project.org/web/packages/FlexRL/index.html},
   selected={true}
 }
