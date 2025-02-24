@@ -1,7 +1,7 @@
 ---
 layout: post
 title: False Discovery estimation in Record Linkage
-date: 2025-02-12 16:34:00
+date: 2025-02-24 21:37:00
 description: A method for estimating the FDR in RL
 tags: RecordLinkage, FalseDiscoveryRate
 categories: sample-posts
