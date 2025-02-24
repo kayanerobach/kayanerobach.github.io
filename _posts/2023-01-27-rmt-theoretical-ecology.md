@@ -64,13 +64,13 @@ loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should 
     
 - *symmetrization* [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743): 
 both of the following conditions imply the singularity of $$[A_c \pm \Delta]$$:
-    - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$
-    - $$\Delta^T \Delta - {A_c}^T A_c$$ positive definite
+    - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$ 
+    - $$\Delta^T \Delta - {A_c}^T A_c$$ positive definite 
 
 **Conditions for the regularity of the interval**
 
 - *Beeck's condition* [Corollary 3.2 from Beeck](https://doi.org/10.1137/S0895479896310743): 
-$$\rho (|{A_c}^{-1}| \Delta) < 1$$ is regular (for $$A_c$$ non singular).
+$$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular).
 
 - *symmetrization* [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743): 
 both of the following conditions imply the regularity of $$[A_c \pm \Delta]$$:
