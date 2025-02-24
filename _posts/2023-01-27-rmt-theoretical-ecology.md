@@ -22,7 +22,7 @@ theoretical ecology.
   </a> 
 </div>
 <br>
-<div style="margin-left: 50px;">
+<div style="margin-left: 30px;">
   <a href="/assets/pdf/RMTprez.pdf" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-projector" style="font-size: 74px;"></i>
   </a> 
@@ -31,10 +31,7 @@ theoretical ecology.
 
 ### From the P-property to regularity of an interval matrix
 
-\begin{align*}
-    & I_N - \Gamma_N \text{ P-matrix}\\
-    \iff & \left[ -2 {\Gamma_N}^{-1}, -2 {\Gamma_N}^{-1} + 2 I_N \right] \text{ is regular}
-\end{align*}
+$$I_N - \Gamma_N \text{ P-matrix} \iff \left[ -2 {\Gamma_N}^{-1}, -2 {\Gamma_N}^{-1} + 2 I_N \right] \text{ is regular}$$
 
 Matrices in this interval have the form: $-2 {\Gamma_N}^{-1} + \Delta$, where $\Delta$ is a diagonal matrix with entries in $[0,2]$.
 

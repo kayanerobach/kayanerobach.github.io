@@ -26,7 +26,8 @@ In the paper, we explain our methodology and we illustrate the ability of our me
     <i class="fa-solid fa-file-lines" style="font-size: 74px;"></i>
   </a> 
 </div>
-<div style="margin-left: 50px;">
+<br>
+<div style="margin-left: 30px;">
   <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file" style="font-size: 74px;"></i>
   </a> 
@@ -39,21 +40,35 @@ The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https
 </div>
 
 <i>Cite the paper:</i>
+<br>
 @article{robach2025,
+<br>
 title = {A flexible model for Record Linkage},
+<br>
 author = {Robach, K. and van der Pas, S. L. and van de Wiel, M. A. and Hof, M. H.},
+<br>
 year = {2025},
+<br>
 journal = {Journal of the Royal Statistical Society: Series C}
+<br>
 }
 
 <i>Cite the package:</i>
+<br>
 @Manual{flexrlpackage,
+<br>
 title = {FlexRL},
+<br>
 author = {Robach, K. and Hof, M. H.},
+<br>
 year = {2025},
+<br>
 note = {R package},
+<br>
 url = {https://cran.r-project.org/web/packages/FlexRL/index.html},
+<br>
 organization = {CRAN}
+<br>
 }
 
 ### Technical details
