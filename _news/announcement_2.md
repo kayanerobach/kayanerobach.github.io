@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-**Meeconos** organised by Nuria Senar Villadeamigo and Kayané Robach, more details soon.
+**Meeconos** organised by Nuria Senar Villadeamigo and Kayané Robach, more details soon. Seminar series on MEthodology, ECONometrics, COmputation gathering young researchers to talk about methods through time and developments, thought processes and theoretical, practical frameworks.
 
 <!-- ---
 layout: post
