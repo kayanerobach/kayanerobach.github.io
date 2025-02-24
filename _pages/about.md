@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 <br>
 <br>
 <br>
-From science to practice my work revolves around bridging the gap between causality theory and its practical applications, particularly in the context of survival analysis, addressing the intricate nuances that arise when dealing with multiple datasets.
+From science to practice my work revolves around bridging the gap between causality theory and its practical applications, particularly in the context of healthcare data, addressing the intricate nuances that arise when dealing with multiple data sets.
 
 In many instances data are collected at different points in time, where baseline information is gathered from a prior study and the outcome data are collected later.
 
