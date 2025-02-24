@@ -33,7 +33,7 @@ theoretical ecology.
 
 $$I_N - \Gamma_N \text{ P-matrix} \iff \left[ -2 {\Gamma_N}^{-1}, -2 {\Gamma_N}^{-1} + 2 I_N \right] \text{ is regular}$$
 
-Matrices in this interval have the form: $-2 {\Gamma_N}^{-1} + \Delta$, where $\Delta$ is a diagonal matrix with entries in $[0,2]$.
+Matrices in this interval have the form: $$-2 {\Gamma_N}^{-1} + \Delta$$, where $$\Delta$$ is a diagonal matrix with entries in $$[0,2]$$.
 
 The challenge consist in showing that the interval contains no singular matrix.
 
@@ -43,7 +43,7 @@ The challenge consist in showing that the interval contains no singular matrix.
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RMTTheoreticalEcology' %}
 </div>
 
-Consider an exhaustive list of methods to determine the **REG**ular**I**ty or the **SING**ularity of the interval $[A_c - \Delta, A_c + \Delta]$ where $A_c = (A - I)^{-1} (A + I)$ and $\Delta = I$; $A$ being a matrix of size $(n 'times n)$ and $I$ the identity matrix of size $(n 'times n)$.
+Consider an exhaustive list of methods to determine the **REG**ular**I**ty or the **SING**ularity of the interval $$[A_c - \Delta, A_c + \Delta]$$ where $A_c = (A - I)^{-1} (A + I)$ and $\Delta = I$; $A$ being a matrix of size $(n 'times n)$ and $I$ the identity matrix of size $(n 'times n)$.
 
 **Conditions for the existence of a singular matrix**
 
