@@ -13,7 +13,7 @@ thumbnail: assets/img/rmt_theoreticalecology.png
 This is an investigation on the P-property of the inverse of a random matrix under positive diagonal deformation. This project is driven by the objective of understanding properties of large dynamic Lotka Volterra systems equilibria for
 theoretical ecology.
 
-### Supporting information 
+### Supporting information
 
 <br>
 <div style="margin-left: 30px;">
@@ -47,49 +47,39 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
 
 **Conditions for the existence of a singular matrix**
 
-- *midpoint matrix* $$A_c$$: 
-<br>
-the midpoint matrix $$A_c$$ of the interval matrix $$[A_c \pm \Delta]$$ is singular.
-    
-- *diagonal condition* [Theorem 2.1 from Oettli and Prager](https://doi.org/10.1137/S0895479896310743): 
-<br>
-$$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$.
-    
-- *steepest determinant descent* [Algorithm 5.1](https://doi.org/10.1016/0024-3795(89)90004-9): 
-<br>
-investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval).
-    
-- *two Qz-matrices* [Theorem 4.3](https://doi.org/10.1137/S0895479896313978): 
-<br>
-the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$$ and $$diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$.
-    
-- *main algorithm* [Theorem 2.2 - find the singular matrix](https://doi.org/10.1137/0614007): 
-<br>
-loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form.
-    
-- *symmetrization* [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743): 
-<br>
-both of the following conditions imply the singularity of $$[A_c \pm \Delta]$$:
-    - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$ (norm of $$\Delta$$ is larger)
-    - $$\Delta^T \Delta - {A_c}^T A_c$$ positive definite 
+- _midpoint matrix_ $$A_c$$:
+  <br>
+  the midpoint matrix $$A_c$$ of the interval matrix $$[A_c \pm \Delta]$$ is singular.
+- _diagonal condition_ [Theorem 2.1 from Oettli and Prager](https://doi.org/10.1137/S0895479896310743):
+  <br>
+  $$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$.
+- _steepest determinant descent_ [Algorithm 5.1](<https://doi.org/10.1016/0024-3795(89)90004-9>):
+  <br>
+  investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval).
+- _two Qz-matrices_ [Theorem 4.3](https://doi.org/10.1137/S0895479896313978):
+  <br>
+  the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$$ and $$diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$.
+- _main algorithm_ [Theorem 2.2 - find the singular matrix](https://doi.org/10.1137/0614007):
+  <br>
+  loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form.
+- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
+  <br>
+  both of the following conditions imply the singularity of $$[A_c \pm \Delta]$$: - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$ (norm of $$\Delta$$ is larger) - $$\Delta^T \Delta - {A_c}^T A_c$$ positive definite
 
 **Conditions for the regularity of the interval**
 
-- *Beeck's condition* [Corollary 3.2 from Beeck](https://doi.org/10.1137/S0895479896310743): 
-<br>
-$$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular).
+- _Beeck's condition_ [Corollary 3.2 from Beeck](https://doi.org/10.1137/S0895479896310743):
+  <br>
+  $$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular).
 
-- *symmetrization* [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743): 
-<br>
-both of the following conditions imply the regularity of $$[A_c \pm \Delta]$$:
-    - $$\lambda_{\max}(\Delta^T \Delta) < \lambda_{\min}({A_c}^T A_c)$$
-    - $${A_c}^T A_c - | \Delta^T \Delta | I$$ is positive definite
+- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
+  <br>
+  both of the following conditions imply the regularity of $$[A_c \pm \Delta]$$: - $$\lambda_{\max}(\Delta^T \Delta) < \lambda_{\min}({A_c}^T A_c)$$ - $${A_c}^T A_c - | \Delta^T \Delta | I$$ is positive definite
 
-- *two Qz-matrices* [Theorem 4.3](https://doi.org/10.1137/S0895479896313978): 
-<br>
-the linear programming problem $$(\star)$$ is bounded for all $$z \in \{ \pm 1 \}^n$$.  
+- _two Qz-matrices_ [Theorem 4.3](https://doi.org/10.1137/S0895479896313978):
+  <br>
+  the linear programming problem $$(\star)$$ is bounded for all $$z \in \{ \pm 1 \}^n$$.
 
-- *main algorithm* [Theorem 2.2 - all matrices are non singular](https://doi.org/10.1137/0614007): 
-<br>
-loop on $$\{ \pm 1 \}^n$$ to check there is no singular matrix in the whole interval. This last track is the most expensive since the algorithm will investigate the values of the sign real spectral radius.
-
+- _main algorithm_ [Theorem 2.2 - all matrices are non singular](https://doi.org/10.1137/0614007):
+  <br>
+  loop on $$\{ \pm 1 \}^n$$ to check there is no singular matrix in the whole interval. This last track is the most expensive since the algorithm will investigate the values of the sign real spectral radius.

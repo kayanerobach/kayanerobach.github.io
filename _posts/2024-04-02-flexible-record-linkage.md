@@ -21,6 +21,7 @@ We propose a Stochastic Expectation Maximisation to combine observations from tw
 
 In the paper, we explain our methodology and we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
 <br>
+
 <div style="margin-left: 30px;">
   <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-lines" title="JRSSC" style="font-size: 74px;"></i>
