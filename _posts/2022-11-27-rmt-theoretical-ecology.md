@@ -71,7 +71,7 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
   <br>
   both of the following conditions imply the singularity of $$[A_c \pm \Delta]$$:
   <br>
-  - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$ (norm of $$\Delta$$ is larger)
+  - $$\lambda_{\max}({A_c}^T A_c) \leq \lambda_{\min}(\Delta^T \Delta)$$
     <br>
   - $$\Delta^T \Delta - {A_c}^T A_c$$ positive definite
     <br>
