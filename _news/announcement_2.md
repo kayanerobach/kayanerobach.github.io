@@ -1,3 +1,13 @@
+---
+layout: post
+date: 2025-02-24 15:59:00-0400
+inline: true
+related_posts: false
+---
+
+**Meeconos** organised by Nuria Senar Villadeamigo and Kayané Robach, more details soon.
+
+
 <!-- ---
 layout: post
 title: A long announcement with details
