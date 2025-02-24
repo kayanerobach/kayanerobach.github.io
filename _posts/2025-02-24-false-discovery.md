@@ -20,18 +20,7 @@ We introduce a new method to estimate the FDR and give guidelines for applying i
 ### Article
 
 In the paper, we develop our methodology and we illustrate its applicability on real data applications. We detail the different choices made to build the algorithm that estimates the False Discovery Rate for the Record Linkage task. We show how the method informs on the reliability of the linked data and how the FDR estimation can be used as a tool for inference on linked data.
-<br>
-<div style="margin-left: 30px;">
-  <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-lines" title="JRSSC" style="font-size: 74px;"></i>
-  </a> 
-</div>
-<br>
-<div style="margin-left: 30px;">
-  <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
-  </a> 
-</div>
+
 <br>
 The code, experiments and data sets are available on GitHub.
 <br>
@@ -47,8 +36,6 @@ The code, experiments and data sets are available on GitHub.
 <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FDRAlgoDev.png" class="img-fluid" %}
     </div>
-<br>
-<br>
 </div>
 </div>
 
