@@ -13,6 +13,8 @@ thumbnail: assets/img/rmt_theoreticalecology.png
 This is an investigation on the P-property of the inverse of a random matrix under positive diagonal deformation. This project is driven by the objective of understanding properties of large dynamic Lotka Volterra systems equilibria for
 theoretical ecology.
 
+The report presents our study of the phase transition phenomena for the feasibility (whether or not there is species extinction at the equilibrium), Volterra Lyapunov stability (non-negative and globally stable equilibrium) and P-property (unique non-negative equilibrium) in the Lotka Volterra model. The P-property remains an open problem.
+
 ### Supporting information
 
 <br>
