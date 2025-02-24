@@ -23,13 +23,13 @@ In the paper, we explain our methodology and we illustrate the ability of our me
 <br>
 <div style="margin-left: 30px;">
   <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-lines" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file-lines" title="JRSSC" style="font-size: 74px;"></i>
   </a> 
 </div>
 <br>
 <div style="margin-left: 30px;">
   <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
   </a> 
 </div>
 <br>
@@ -79,6 +79,9 @@ To estimate the common set of records, we build a statistical model that leverag
 <div class="exampletest">
 <div align=center>
 <br>
+<div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FlexRL.png" class="img-fluid rounded z-depth-1" %}
+    </div>
 <script type="text/tikz">
 \begin{tikzpicture}
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
