@@ -23,12 +23,13 @@ In the paper, we explain our methodology and we illustrate the ability of our me
 <br>
 <div style="margin-left: 30px;">
   <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-lines" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file-lines" title="JRSSC" style="font-size: 74px;"></i>
   </a> 
 </div>
-<div style="margin-left: 50px;">
+<br>
+<div style="margin-left: 30px;">
   <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
   </a> 
 </div>
 <br>

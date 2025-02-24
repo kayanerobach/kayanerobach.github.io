@@ -18,12 +18,13 @@ theoretical ecology.
 <br>
 <div style="margin-left: 30px;">
   <a href="/assets/pdf/RMTreport.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="<i class="fa-solid fa-file-pen"></i>" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file-pen" style="font-size: 74px;"></i>
   </a> 
 </div>
+<br>
 <div style="margin-left: 50px;">
   <a href="/assets/pdf/RMTprez.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="<i class="fa-solid fa-projector"></i>" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-projector" style="font-size: 74px;"></i>
   </a> 
 </div>
 <br>
