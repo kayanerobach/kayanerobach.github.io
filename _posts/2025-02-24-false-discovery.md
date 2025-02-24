@@ -11,15 +11,15 @@ tikzjax: true
 
 ### Overview
 
-Combining data from various sources such as observational studies and municipality registries or hospital databases empowers researchers to explore innovative questions and improve models. However, the lack of a unique identifier often poses challenges. Natural problems like counting casualties require distinguishing individuals in registers that may contain duplicates when bodies are listed by several organisations. Conducting healthcare longitudinal studies require follow up information that is often concealed due to privacy considerations.
+This era of data enables combining information to broaden research opportunities without the expense of new data collection. However, since data are collected for administrative or operational purposes rather than with specific future research questions in mind and, due to privacy reasons, no unique identifier is available. Thus, to assemble observations referring to the same entities, 
 
-Record linkage procedures determine whether pairs of observations collected on different occasions belong to the same individual using partially identifying variables (e.g. initials, birth year, zipcode), hereafter denoted PIVs. The complexity of this problem stems from the sub-par reliability of the PIVs used to link records and their limited number of unique values. Furthermore, because entities are often uniquely represented in each file, records from one file can maximally be linked with one record in the other file, making the linkage decisions interdependent.
+Record Linkage (RL) algorithms have been developed. RL is a complex task due to the sub-par reliability of the partially identifying variables used to link records and their limited number of unique values. Estimating the False Discovery Rate (FDR) associated with RL therefore holds importance for later inference. In particular in healthcare studies, estimating the Type I error of a set of linked records is crucial to determine the reliability of the inference drawn from the linked data. 
 
-We propose a Stochastic Expectation Maximisation to combine observations from two overlapping data sets, that adapts to varying data complexities, addressing registration errors, including mistakes and missing values, and accommodating changes of the identifying information over time. Taking account of zip code temporal dynamics holds importance in healthcare longitudinal studies; in the particular case of survival analysis, long term follow-up are crucial, which increases the probability to move.
+We introduce a new method to estimate the FDR and give guidelines for applying it on any sort of RL algorithm. Our recipe consists in linking records from real and synthesised data, estimating the FDR with the synthetic set. Our procedure enables identifying a threshold on the posterior linkage probabilities for which the RL process may be reliable. We investigate the performance of this methodology with well known RL algorithms and data sets before applying it to the Netherlands Perinatal Registry to show the importance of the FDR in RL when studying children/mother dynamics in healthcare records.
 
 ### Article
 
-In the paper, we explain our methodology and we illustrate the ability of our methodology to connect observations using two large real data applications and demonstrate the robustness of our model to the linking variables quality in a simulation study.
+In the paper, we develop our methodology and we illustrate its applicability on real data applications. We detail the different choices made to build the algorithm that estimates the False Discovery Rate for the Record Linkage task. We show how the method informs on the reliability of the linked data and how the FDR estimation can be used as a tool for inference on linked data.
 <br>
 <div style="margin-left: 30px;">
   <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
@@ -33,67 +33,22 @@ In the paper, we explain our methodology and we illustrate the ability of our me
   </a> 
 </div>
 <br>
-The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html). The development version of the code, experiments and data sets are available on GitHub.
+The code, experiments and data sets are available on GitHub.
 <br>
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/FlexRL-experiments' %}
+    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/FDR-experiments' %}
 </div>
 
-<i>Cite the paper:</i>
-@article{robach2025,
-title = {A flexible model for Record Linkage},
-author = {Robach, K. and van der Pas, S. L. and van de Wiel, M. A. and Hof, M. H.},
-year = {2025},
-journal = {Journal of the Royal Statistical Society Series C: Applied Statistics}
-}
-
-<i>Cite the package:</i>
-@Manual{flexrlpackage,
-title = {FlexRL},
-author = {Robach, K. and Hof, M. H.},
-year = {2025},
-note = {R package},
-url = {https://cran.r-project.org/web/packages/FlexRL/index.html},
-organization = {CRAN}
-}
-
 ### Technical details
-
-To estimate the common set of records, we build a statistical model that leverages the latent representation of the partially identifying information embedded in the data generation process, and derive a probabilistic estimate that allows for inference. We estimate the model parameters represented as input nodes on the probabilistic graphical model hereafter, using a Stochastic Expectation Maximisation algorithm.
-<br>
 
 <div class="exampletest">
 <div align=center>
 <br>
-<script type="text/tikz">
-\begin{tikzpicture}
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};
-\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, dashed, minimum size=1cm] (delta) at (0,2) {$\Delta$};
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (eta) at (0,0) {$\eta$};
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (alpha) at (0,-2) {$\alpha$};
-\node[shape=circle, dashed, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (HA) at (-3,-2) {$H^A$};
-\node[shape=circle, dashed, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (HB) at (3,-2) {$H^B$};
-\node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (phi) at (0,-4) {$\phi$};
-\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GA) at (-4.5,-4) {$G^A$};
-\node[shape=circle, draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (GB) at (4.5,-4) {$G^B$};
-\path [-stealth] (gamma) edge (delta);
-\path [-stealth] (delta) edge (HA);
-\path [-stealth] (delta) edge (HB);
-\path [-stealth] (eta) edge (HA);
-\path [-stealth] (eta) edge (HB);
-\path [-stealth] (alpha) edge (HA);
-\path [-stealth] (alpha) edge (HB);
-\path [-stealth] (HA) edge (GA);
-\path [-stealth] (HB) edge (GB);
-\path [-stealth] (phi) edge (GA);
-\path [-stealth] (phi) edge (GB);
-\end{tikzpicture}
-</script>
-<i><font color="#0093af">Probabilistic graphical model for the decomposition of the data generation process illustrating the record linkage problem we tackle with a Stochastic EM.</font></i>
+<div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FDRAlgoDev.png" class="img-fluid" %}
+    </div>
 <br>
 <br>
 </div>
 </div>
 
-<br>
-To wit, the parameter $$\eta$$ aligns with the multinomial distribution of each PIV. From the observed registered data $$G^A$$ and $$G^B,$$ we generate underlying credible true values $$H^A$$ and $$H^B$$ factoring in potential missing values and mistakes with $$\phi.$$ By comparing the latent information generated for the records supposedly referring to the same entities, we account for changes between the information collected in file $$A$$ and in file $$B$$ with $$\alpha.$$ (The place of residence is likely to change through the years for instance). We then use blocking techniques to build plausible pairs, that are those which connect records when their true values agree together for stable PIVs (which are thought not to evolve over time). We evaluate the contribution of each candidate pair to the complete data likelihood and decide whether to accept or reject it. We finally fit the probability for a record in file $$A$$ to form a link with a record in file $$B$$ with $$\gamma.$$ We sketch the outline of the methodology in the probabilistic graphical model above.

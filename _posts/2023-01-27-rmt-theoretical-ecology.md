@@ -53,7 +53,7 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
     
 - *steepest determinant descent* [Algorithm 5.1](https://doi.org/10.1016/0024-3795(89)90004-9): investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval).
     
-- *two Qz-matrices* [Theorem 4.3](https://doi.org/10.1137/S0895479896313978): the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$ and $diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$.
+- *two Qz-matrices* [Theorem 4.3](https://doi.org/10.1137/S0895479896313978): the linear programming problem $$(\star)$$ maximize $$z^T x$$ subject to $$(A_c - \Delta \cdot diag(z)) x \leq 0$$ and $$diag(z) \cdot x \geq 0$$, is unbounded for some $$z \in \{ \pm 1 \}^n$$.
     
 - *main algorithm* [Theorem 2.2 - find the singular matrix](https://doi.org/10.1137/0614007): loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form.
     
