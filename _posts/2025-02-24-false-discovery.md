@@ -3,7 +3,7 @@ layout: post
 title: False Discovery estimation in Record Linkage
 date: 2025-02-12 16:34:00
 description: A method for estimating the FDR in RL
-tags: Record Linkage, False Discovery Rate
+tags: RecordLinkage, FalseDiscoveryRate
 categories: sample-posts
 thumbnail: assets/img/FDRAlgo.png
 tikzjax: true
@@ -44,7 +44,7 @@ The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https
 title = {A flexible model for Record Linkage},
 author = {Robach, K. and van der Pas, S. L. and van de Wiel, M. A. and Hof, M. H.},
 year = {2025},
-journal = {Journal of the Royal Statistical Society: Series C}
+journal = {Journal of the Royal Statistical Society Series C: Applied Statistics}
 }
 
 <i>Cite the package:</i>

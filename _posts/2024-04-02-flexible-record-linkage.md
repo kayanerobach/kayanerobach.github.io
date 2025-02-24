@@ -3,7 +3,7 @@ layout: post
 title: Flexible Record Linkage
 date: 2025-02-12 16:34:00
 description: A STochastic Expectation Maximisation approach to Record Linkage
-tags: Record Linkage, Latent Variables, StEM
+tags: RecordLinkage, LatentVariables, StEM
 categories: sample-posts
 thumbnail: assets/img/FlexRL.png
 tikzjax: true
@@ -38,6 +38,7 @@ The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/FlexRL-experiments' %}
 </div>
+<br>
 
 <i>Cite the paper:</i>
 <br>
@@ -80,7 +81,7 @@ To estimate the common set of records, we build a statistical model that leverag
 <div align=center>
 <br>
 <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FlexRL.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/FlexRL.png" class="img-fluid" %}
     </div>
 <script type="text/tikz">
 \begin{tikzpicture}
