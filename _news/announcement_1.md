@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[**Amsterdam Causality Meeting**](https://amscausality.github.io/) organised by Stéphanie van der Pas, Sara Magliacane and Joris Mooij.
+:handshake:&nbsp; [**Amsterdam Causality Meeting**](https://amscausality.github.io/) organised by Stéphanie van der Pas, Sara Magliacane and Joris Mooij.
