@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2025-03
+date: 2025-03-01 01:01:00-0400
 inline: true
 related_posts: false
+day: false
 ---
 
 :handshake:&nbsp; **Meeconos** a seminar series organised by Nuria Senar Villadeamigo and myself, gathering young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details soon.
