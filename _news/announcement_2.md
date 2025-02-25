@@ -6,7 +6,7 @@ related_posts: false
 day: false
 ---
 
-:handshake:&nbsp; **Meeconos** a seminar series organised by Nuria Senar Villadeamigo and myself, gathering young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details soon.
+:handshake:&nbsp; **Meeconos** a seminar series organised by Nuria Senar Villadeamigo and myself in Amsterdam as part of the VVS-OR.We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details soon.
 
 <!-- ---
 layout: post
