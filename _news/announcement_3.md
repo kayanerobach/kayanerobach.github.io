@@ -1,8 +1,9 @@
-<!-- ---
+---
 layout: post
-date: 2024-01-01 15:59:00-0400
+date: 2025-04
 inline: true
 related_posts: false
 ---
 
-**Causality reading group** organised by Louk Smalbil and Andreas Sauter. -->
+:tv:&nbsp; I will present a poster at the [European Causal Inference Meeting](https://www.eurocim.org/) 2025 in Gent, on Causal Record Linkage: Critical Issues and Novel Approaches to False Discovery Propagation.
+
