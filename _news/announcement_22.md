@@ -6,4 +6,4 @@ related_posts: false
 day: true
 ---
 
-:tv:&nbsp; I gave a talk at the [Channel Network Conference](https://cnc23.sciencesconf.org/index/) 2023 in Wageningen, on Record Linkage. [[slides](/assets/pdf/Wageningenslides.pdf), [abstract](/assets/pdf/Wageningenabstract.pdf)]
+:tv:&nbsp; I gave a talk at the [Channel Network Conference](https://cnc23.sciencesconf.org/index/) 2023 in Wageningen, on Record Linkage. [[abstract](/assets/pdf/Wageningenabstract.pdf), [slides](/assets/pdf/Wageningenslides.pdf)]
