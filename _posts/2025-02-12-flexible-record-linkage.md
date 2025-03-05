@@ -65,7 +65,6 @@ url = {https://doi.org/10.1093/jrsssc/qlaf016}
 <br>
 }
 
-
 <i>Cite the package:</i>
 <br>
 @Manual{flexrlpackage,
