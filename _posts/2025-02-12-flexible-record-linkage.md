@@ -43,17 +43,28 @@ The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https
 
 <i>Cite the paper:</i>
 <br>
-@article{robach2025,
+@article{robachetal2025,
 <br>
-title = {A flexible model for Record Linkage},
+author = {Robach, Kayané and van der Pas, Stéphanie L and van de Wiel, Mark A and Hof, Michel H},
 <br>
-author = {Robach, K. and van der Pas, S. L. and van de Wiel, M. A. and Hof, M. H.},
+title = {A flexible model for record linkage},
+<br>
+journal = {Journal of the Royal Statistical Society Series C: Applied Statistics},
+<br>
+pages = {qlaf016},
 <br>
 year = {2025},
 <br>
-journal = {Journal of the Royal Statistical Society: Series C}
+month = {02},
+<br>
+issn = {0035-9254},
+<br>
+doi = {10.1093/jrsssc/qlaf016},
+<br>
+url = {https://doi.org/10.1093/jrsssc/qlaf016}
 <br>
 }
+
 
 <i>Cite the package:</i>
 <br>
