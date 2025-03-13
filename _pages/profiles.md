@@ -7,9 +7,8 @@ nav: true
 nav_order: 3
 ---
 
-{% if news.prez %}
-  {% include news.liquid %}
-{% endif %} -->
+{% include latest_posts.liquid %} -->
+
 
   <!-- <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
