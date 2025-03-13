@@ -4,6 +4,7 @@ date: 2025-03-01 01:01:00-0400
 inline: true
 related_posts: false
 day: false
+prez: false
 ---
 
 :handshake:&nbsp; **Meconos** a seminar series organised by Nuria Senar Villadeamigo and myself in Amsterdam as part of the [VVSOR](https://www.vvsor.nl/). We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details to come soon.
