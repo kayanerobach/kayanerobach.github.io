@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /presentations/
 title: presentations
@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-{% include latest_posts.liquid %}
+{% include latest_posts.liquid %} -->
 
 
   <!-- <h2>
