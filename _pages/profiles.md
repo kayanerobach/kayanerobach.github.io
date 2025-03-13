@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /presentations/
 title: presentations
@@ -9,7 +9,7 @@ nav_order: 3
 
 {% if news.prez %}
   {% include news.liquid %}
-{% endif %}
+{% endif %} -->
 
 
   <!-- <h2>
