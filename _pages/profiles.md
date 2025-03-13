@@ -11,7 +11,6 @@ nav_order: 3
   {% include news.liquid %}
 {% endif %} -->
 
-
   <!-- <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
   </h2>
