@@ -29,16 +29,10 @@ In the paper, we explain our methodology and we illustrate the ability of our me
   </a> 
 </div>
 <br>
-<!-- <div style="margin-left: 30px;">
-  <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
-    <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px; margin-right: 10px;"></i>
-    <span style="font-size: 24px;">    arXiv</span>
-  </a>
-</div> -->
 <div style="margin-left: 30px;">
   <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
-    <span style="font-size: 24px;">    arXiv</span>
+    <span style="font-size: 24px;">arXiv</span>
   </a> 
 </div>
 <br>
