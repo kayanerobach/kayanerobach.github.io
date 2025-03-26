@@ -24,16 +24,23 @@ In the paper, we explain our methodology and we illustrate the ability of our me
 
 <div style="margin-left: 30px;">
   <a href="https://doi.org/10.1093/jrsssc/qlaf016" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-lines" title="JRSSC" style="font-size: 74px;"></i>
+    <i class="fa-solid fa-file-lines" title="JRSSSC" style="font-size: 74px;"></i>
+    <span style="font-size: 24px;">JRSSSC</span>
   </a> 
 </div>
 <br>
 <div style="margin-left: 30px;">
+  <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
+    <i class="fa-solid fa-file-pdf" title="Arxiv" style="font-size: 74px; margin-right: 10px;"></i>
+    <span style="font-size: 24px;">arXiv</span>
+  </a>
+</div>
+<!-- <div style="margin-left: 30px;">
   <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-pdf" title="Arxiv" style="font-size: 74px;"></i>
     <span style="font-size: 24px;">arXiv</span>
   </a> 
-</div>
+</div> -->
 <br>
 The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html). The development version of the code, experiments and data sets are available on GitHub.
 <br>
