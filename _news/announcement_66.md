@@ -8,7 +8,7 @@ recent: true
 prez: false
 ---
 
-:handshake:&nbsp; **Meconos** a seminar series organised by Nuria Senar Villadeamigo and myself in Amsterdam as part of the [VVSOR](https://www.vvsor.nl/). We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details to come soon.
+:handshake:&nbsp; **COMEECON** a seminar series organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/). We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details to come soon.
 
 <!-- ---
 layout: post

@@ -30,7 +30,7 @@ In the paper, we explain our methodology and we illustrate the ability of our me
 </div>
 <br>
 <div style="margin-left: 30px;">
-  <a href="https://arxiv.org/pdf/2407.06835" target="_blank" rel="noopener noreferrer">
+  <a href="https://arxiv.org/abs/2407.06835" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
     <span style="font-size: 24px;">arXiv</span>
   </a> 

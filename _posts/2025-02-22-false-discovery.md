@@ -1,7 +1,7 @@
 ---
 layout: post
 title: False Discovery estimation in Record Linkage
-date: 2025-02-22 21:37:00
+date: 2025-03-26 21:37:00
 description: A method for estimating the FDR in RL
 tags: RecordLinkage, FalseDiscoveryRate
 categories: sample-posts
@@ -23,7 +23,7 @@ In the paper, we develop our methodology and we illustrate its applicability on 
 <br>
 
 <div style="margin-left: 30px;">
-  <a href="https://arxiv.org/submit/6312333/view" target="_blank" rel="noopener noreferrer">
+  <a href="https://arxiv.org/abs/2503.20627" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file" title="Arxiv" style="font-size: 74px;"></i>
     <span style="font-size: 24px;">arXiv</span>
   </a> 
