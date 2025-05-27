@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-05-01 01:01:00-0400
+date: 2025-06-24 01:01:00-0400
 inline: true
 related_posts: false
 day: false
@@ -8,7 +8,7 @@ recent: true
 prez: false
 ---
 
-:handshake:&nbsp; **COMEECON** a seminar series organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/). We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. More details to come soon.
+:handshake:&nbsp; [**CoMeEcon**](https://comeecon.github.io/) will start soon! We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is a seminar series organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/). More details will come soon.
 
 <!-- ---
 layout: post

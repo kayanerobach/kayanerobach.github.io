@@ -8,4 +8,4 @@ recent: true
 prez: true
 ---
 
-:tv:&nbsp; I will give a talk at the [International Biometric Society Channel Network Conference](https://cnc25.sciencesconf.org/) 2025 in Liège, on False Discovery estimation in Record Linkage. [[abstract](/assets/pdf/Liegeabstract.pdf)]
+:tv:&nbsp; I gave a talk at the [International Biometric Society Channel Network Conference](https://cnc25.sciencesconf.org/) 2025 in Liège, on False Discovery estimation in Record Linkage. [[abstract](/assets/pdf/Liegeabstract.pdf), [slides](/assets/pdf/CNC25slides.pdf)]
