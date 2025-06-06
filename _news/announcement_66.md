@@ -1,14 +1,31 @@
 ---
 layout: post
-date: 2025-06-24 01:01:00-0400
+date: 2025-06-25 01:01:00-0400
 inline: true
 related_posts: false
-day: false
+day: true
 recent: true
 prez: false
 ---
 
-:handshake:&nbsp; [**CoMeEcon**](https://comeecon.github.io/) will start soon! We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is a seminar series organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/). More details will come soon.
+:handshake:&nbsp; [**CoMeEcon**](https://comeecon.github.io/) first seminar! We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente). The seminar series is organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/).
+
+<!-- Dear,
+
+I would like to share the following information about a new seminar series on the topic of computational statistics starting this summer as part of the Mathematical Statistics section of the VVSOR.
+
+On June 25th, the first seminar of the CoMeEcon series will take place.
+
+It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente). 
+
+Date: Wednesday June 25
+Time: 14.00 - 18.00
+Location: Vrije Universiteit Amsterdam (available online)
+
+Check our CoMeEcon website for more information.
+
+Best regards, 
+Kayané -->
 
 <!-- ---
 layout: post
