@@ -8,7 +8,7 @@ recent: true
 prez: false
 ---
 
-:handshake:&nbsp; [**CoMeEcon**](https://comeecon.github.io/) first seminar! We gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente). The seminar series is organised by Nuria Senar Villadeamigo and myself in the Netherlands as part of the [VVSOR](https://www.vvsor.nl/).
+:handshake:&nbsp; [**CoMeEcon**](https://comeecon.github.io/) first seminar! Together with [Nuria](https://github.com/nuria-sv) we gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente).
 
 <!-- Dear,
 
