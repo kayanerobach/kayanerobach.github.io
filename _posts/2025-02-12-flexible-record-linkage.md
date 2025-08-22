@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flexible Record Linkage
-date: 2025-02-12 16:34:00
+date: 2025-02-11 16:34:00
 description: A STochastic Expectation Maximisation approach to Record Linkage
 tags: RecordLinkage, LatentVariables, StEM
 categories: sample-posts
