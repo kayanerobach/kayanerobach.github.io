@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-06-25 01:01:00-0400
+date: 2025-11-19 01:01:00-0400
 inline: true
 related_posts: false
 day: true
@@ -8,7 +8,7 @@ recent: true
 prez: false
 ---
 
-:handshake:&nbsp; **[CoMeEcon](https://comeecon.github.io/)** first seminar! Together with [Nuria](https://github.com/nuria-sv) we gather young researchers to talk about computational statistics methods through time and developments, thought processes and theoretical, practical frameworks. It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente).
+:handshake:&nbsp; **[CoMeEcon](https://comeecon.github.io/)** second episod with Martijn Gösgens! Together with [Nuria](https://github.com/nuria-sv) we gather young researchers to talk about computational statistics methods through time and developments.
 
 <!-- Dear,
 

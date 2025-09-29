@@ -29,7 +29,7 @@ Academics around the world use this theme for their homepages, blogs, lab pages,
 Check out the community webpages below.
 Feel free to add your own page(s) by sending a PR.
 
-<table>
+<!-- <table>
 <tr>
 <td>Academics</td>
 <td>
@@ -176,7 +176,7 @@ Beyond Vision: Physics meets AI (ICIAP: <a href="https://physicsmeetsai.github.i
 Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github.io/" target="_blank">2023</a>)
 </td>
 </tr>
-</table>
+</table> -->
 
 ## Lighthouse PageSpeed Insights
 

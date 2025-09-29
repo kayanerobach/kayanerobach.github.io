@@ -4,7 +4,7 @@ date: 2025-05-13 14:00:00-0400
 inline: true
 related_posts: false
 day: true
-recent: true
+recent: false
 prez: false
 ---
 
