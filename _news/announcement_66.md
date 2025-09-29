@@ -16,7 +16,7 @@ I would like to share the following information about a new seminar series on th
 
 On June 25th, the first seminar of the CoMeEcon series will take place.
 
-It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente). 
+It is our great pleasure to invite you to this new initiative, featuring a lecture on Regularization in the age of Machine Learning by Gabriel Clara (UTwente).
 
 Date: Wednesday June 25
 Time: 14.00 - 18.00
@@ -24,7 +24,7 @@ Location: Vrije Universiteit Amsterdam (available online)
 
 Check our CoMeEcon website for more information.
 
-Best regards, 
+Best regards,
 Kayané -->
 
 <!-- ---
