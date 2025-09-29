@@ -98,9 +98,6 @@ To estimate the common set of records, we build a statistical model that leverag
 <div class="exampletest">
 <div align=center>
 <br>
-<div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FlexRL.png" class="img-fluid" %}
-    </div>
 <script type="text/tikz">
 \begin{tikzpicture}
 \node[draw={rgb:red,0;green,147;blue,175}, minimum size=1cm] (gamma) at (0,4) {$\gamma$};

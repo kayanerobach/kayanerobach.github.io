@@ -57,7 +57,7 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
   <br>
   $$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$
   <br>
-- _steepest determinant descent_ [Algorithm 5.1](https://doi.org/10.1016/0024-3795(89)90004-9):
+- _steepest determinant descent_ [Algorithm 5.1](<https://doi.org/10.1016/0024-3795(89)90004-9>):
   <br>
   investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval)
   <br>

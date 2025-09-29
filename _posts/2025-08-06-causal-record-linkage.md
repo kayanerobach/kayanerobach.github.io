@@ -35,9 +35,6 @@ Causal Inference can only be performed on reliably linked data, otherwise identi
 <div class="exampletest">
 <div align=center>
 <br>
-<div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FlexRL.png" class="img-fluid" %}
-    </div>
 <script type="text/tikz">
 \begin{tikzpicture}
   \node[shape=circle, draw=black, minimum size=1cm] (x) at (0,0) {$\boldsymbol{X}$};
