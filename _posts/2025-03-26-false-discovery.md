@@ -47,7 +47,7 @@ author = {Robach, Kayané and van der Pas, Stéphanie L and Hof, Michel H and va
 <br>
 title = {False Discovery estimation in Record Linkage},
 <br>
-journal = {},
+journal = {Statistics in Medicine},
 <br>
 pages = {},
 <br>
@@ -67,7 +67,6 @@ url = {}
 
 <div class="exampletest">
 <div align=center>
-<br>
 <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FDPalgo.png" class="img-fluid" %}
     </div>

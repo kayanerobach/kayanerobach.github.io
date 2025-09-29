@@ -21,12 +21,14 @@ The report presents our study of the phase transition phenomena for the feasibil
 <div style="margin-left: 30px;">
   <a href="/assets/pdf/RMTreport.pdf" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-pen" title="Report" style="font-size: 74px;"></i>
+    <span style="font-size: 24px;">Report</span>
   </a> 
 </div>
 <br>
 <div style="margin-left: 30px;">
   <a href="/assets/pdf/RMTprez.pdf" target="_blank" rel="noopener noreferrer">
     <i class="fa-solid fa-file-image" title="Slides" style="font-size: 74px;"></i>
+    <span style="font-size: 24px;">Slides</span>
   </a> 
 </div>
 <br>
@@ -42,7 +44,7 @@ The challenge consist in showing that the interval contains no singular matrix.
 ### Jiri Rohn's algorithm
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/RMTTheoreticalEcology' %}
+    {% include repository/repo.liquid username='robachowyk' repository='robachowyk/P-Property-in-theoretical-ecology-using-RMT' %}
 </div>
 
 Consider an exhaustive list of methods to determine the **REG**ular**I**ty or the **SING**ularity of the interval $$[A_c - \Delta, A_c + \Delta]$$ where $$A_c = (A - I)^{-1} (A + I)$$ and $$\Delta = I$$; $$A$$ being a matrix of size $$(n \times n)$$ and $$I$$ the identity matrix of size $$(n \times n)$$.
