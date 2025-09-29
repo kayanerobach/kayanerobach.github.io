@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Causal Record Linkage
-date: 2025-08-06 16:34:00
+date: 2025-08-06 10:25:00
 description: Causal Inference on linked data: when and how?
 tags: RecordLinkage, CausalInference, Recoverability
 categories: sample-posts
