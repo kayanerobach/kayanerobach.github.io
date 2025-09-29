@@ -36,10 +36,11 @@ In the paper, we explain our methodology and we illustrate the ability of our me
   </a> 
 </div>
 <br>
+The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html). 
 
-[![](https://cranlogs.r-pkg.org/badges/grand-total/FlexRL)](https://cranlogs.r-pkg.org/badges/grand-total/FlexRL)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/FlexRL)](https://cran.r-project.org/web/packages/FlexRL/index.html)
 
-The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html). The development version of the code, experiments and data sets are available on GitHub.
+The development version of the code, experiments and data sets are available on GitHub.
 <br>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">

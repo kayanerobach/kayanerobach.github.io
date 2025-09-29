@@ -35,6 +35,31 @@ The code, experiments and data sets are available on GitHub.
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/FDRinRL-experiments' %}
 </div>
+<br>
+
+<i>Cite the paper:</i>
+<br>
+@article{robachetal2025,
+<br>
+author = {Robach, Kayané and van der Pas, Stéphanie L and Hof, Michel H and van de Wiel, Mark A},
+<br>
+title = {False Discovery estimation in Record Linkage},
+<br>
+journal = {},
+<br>
+pages = {},
+<br>
+year = {2025},
+<br>
+month = {09},
+<br>
+issn = {},
+<br>
+doi = {},
+<br>
+url = {}
+<br>
+}
 
 ### Technical details
 
