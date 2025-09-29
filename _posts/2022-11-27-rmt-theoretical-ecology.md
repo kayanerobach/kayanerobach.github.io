@@ -53,11 +53,11 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
   <br>
   the midpoint matrix $$A_c$$ of the interval matrix $$[A_c \pm \Delta]$$ is singular
   <br>
-- _diagonal condition_ [Theorem 2.1 from Oettli and Prager](https://doi.org/10.1137/S0895479896310743):
+- _diagonal condition_ [Theorem 2.1 from Oettli and Prager](https://epubs.siam.org/doi/10.1137/S0895479896310743):
   <br>
   $$|A_c x| \leq \Delta |x|$$ has a non trivial (i.e. non zero) solution $$x$$
   <br>
-- _steepest determinant descent_ [Algorithm 5.1](<https://doi.org/10.1016/0024-3795(89)90004-9>):
+- _steepest determinant descent_ [Algorithm 5.1](https://doi.org/10.1016/0024-3795(89)90004-9):
   <br>
   investigate determinant bounds of the interval matrix (i.e. the hull of matrices determinant for matrices in the interval)
   <br>
@@ -69,7 +69,7 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
   <br>
   loop on $$\{ \pm 1 \}^n$$ to identify the possible singular matrix which should have the specific form
   <br>
-- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
+- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://epubs.siam.org/doi/10.1137/S0895479896310743):
   <br>
   both of the following conditions imply the singularity of $$[A_c \pm \Delta]$$:
   <br>
@@ -80,11 +80,11 @@ Consider an exhaustive list of methods to determine the **REG**ular**I**ty or th
 
 **Conditions for the regularity of the interval**
 
-- _Beeck's condition_ [Corollary 3.2 from Beeck](https://doi.org/10.1137/S0895479896310743):
+- _Beeck's condition_ [Corollary 3.2 from Beeck](https://epubs.siam.org/doi/10.1137/S0895479896310743):
   <br>
   $$\rho (|{A_c}^{-1}| \Delta)<1$$ is regular (for $$A_c$$ non singular)
   <br>
-- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://doi.org/10.1137/S0895479896310743):
+- _symmetrization_ [Sections 4 and 5 from Rex and Rohn](https://epubs.siam.org/doi/10.1137/S0895479896310743):
   <br>
   both of the following conditions imply the regularity of $$[A_c \pm \Delta]$$:
   <br>
