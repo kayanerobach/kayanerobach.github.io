@@ -11,7 +11,7 @@ tikzjax: true
 
 ### Overview
 
-Linked data sets present a valuable resource for causal inference by granting access to broader sets of variables across wider populations and extended time periods. Through record linkage, researchers can control for confounding and investigate long-term outcomes. However, understanding when and how causal inference can be performed on linked data remains an overlooked problem 
+Linked data sets present a valuable resource for causal inference by granting access to broader sets of variables across wider populations and extended time periods. Through record linkage, researchers can control for confounding and investigate long-term outcomes. However, understanding when and how causal inference can be performed on linked data remains an overlooked problem
 
 In this project we examine how record linkage conflicts with the assumptions required for identifying causal effects. Our investigation reveals that linkage errors result in inconsistencies and alter exchangeability in the causal framework, leading to attenuation and opposite contribution biases in the inference. In attempting to address these biases by being more stringent on the linkage, positivity is curtailed and sampling bias inadvertently emerges.
 

@@ -36,7 +36,7 @@ In the paper, we explain our methodology and we illustrate its ability to connec
   </a> 
 </div>
 <br>
-The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html). 
+The proposed algorithm FlexRL, written in R and Cpp is [available on CRAN](https://cran.r-project.org/web/packages/FlexRL/index.html).
 
 [![](https://cranlogs.r-pkg.org/badges/grand-total/FlexRL)](https://cran.r-project.org/web/packages/FlexRL/index.html)
 
