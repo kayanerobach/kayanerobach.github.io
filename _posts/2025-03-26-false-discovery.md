@@ -5,7 +5,7 @@ date: 2025-03-26 21:37:00
 description: A method for estimating the FDP in RL
 tags: RecordLinkage, FalseDiscoveryProportion
 categories: sample-posts
-thumbnail: assets/img/FDPalgo.png
+thumbnail: assets/img/FDPimg.png
 tikzjax: true
 ---
 
