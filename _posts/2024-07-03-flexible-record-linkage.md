@@ -52,7 +52,7 @@ The development version of the code, experiments and data sets are available on 
 <br>
 @article{robachetal2025,
 <br>
-author = {Robach, Kayané and van der Pas, Stéphanie L and van de Wiel, Mark A and Hof, Michel H},
+author = {Robach, Kayané and van der Pas, Stéphanie L. and van de Wiel, Mark A. and Hof, Michel H.},
 <br>
 title = {A flexible model for record linkage},
 <br>

@@ -43,23 +43,23 @@ The code, experiments and data sets are available on GitHub.
 <br>
 @article{robachetal2025,
 <br>
-author = {Robach, Kayané and Hof, Michel H and van de Wiel, Mark A},
+author = {Robach, Kayané and Hof, Michel H. and van de Wiel, Mark A.},
 <br>
-title = {False Discovery estimation in Record Linkage},
+title = {False Discovery Estimation in Record Linkage},
 <br>
 journal = {Statistics in Medicine},
 <br>
-pages = {},
+volume = {44},
 <br>
-year = {2025},
+number = {23-24},
 <br>
-month = {09},
+pages = {e70292},
 <br>
-issn = {},
+doi = {https://doi.org/10.1002/sim.70292},
 <br>
-doi = {},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.70292},
 <br>
-url = {}
+year = {2025}
 <br>
 }
 
