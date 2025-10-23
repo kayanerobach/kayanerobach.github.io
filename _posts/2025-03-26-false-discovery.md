@@ -1,6 +1,6 @@
 ---
 layout: post
-title: False Discovery estimation in Record Linkage
+title: False Discovery Estimation in Record Linkage
 date: 2025-03-26 21:37:00
 description: A method for estimating the FDP in RL
 tags: RecordLinkage, FalseDiscoveryProportion
