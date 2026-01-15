@@ -8,7 +8,7 @@ recent: true
 prez: false
 ---
 
-:handshake:&nbsp; **[CoMeEcon](https://comeecon.github.io/)** second episod with Martijn Gösgens! Together with [Nuria](https://github.com/nuria-sv) we gather young researchers to talk about computational statistics methods through time and developments.
+:handshake:&nbsp; **[CoMeEcon](https://comeecon.github.io/)** episode 2 with Martijn Gösgens! Together with [Nuria](https://github.com/nuria-sv) we gather young researchers to talk about computational statistics methods through time and developments.
 
 <!-- Dear,
 
