@@ -9,5 +9,3 @@ prez: true
 ---
 
 :tv:&nbsp; I gave a talk at the [International Conference on Statistics and Data Science](https://sites.google.com/view/ims-icsds2025/) 2025 in Sevilla, on Causal Record Linkage. [[abstract](/assets/pdf/ICSDSabstract.pdf), [slides](/assets/pdf/ICSDS25slides.pdf)]
-
-
