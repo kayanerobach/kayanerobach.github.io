@@ -36,13 +36,7 @@ Causal Inference can only be performed on reliably linked data, otherwise identi
 <div align=center>
 <br>
 <script type="text/tikz">
-  \begin{tikzpicture}[
-      every node/.style={align=center},
-      assumption/.style={draw, circle},
-      check/.style={draw, rounded corners},
-      result/.style={draw},
-      arrow/.style={->, thick}
-    ]
+  \begin{tikzpicture}
     \node[shape=circle, draw=black, minimum size=1cm] (x) at (-0.25,1) {$\boldsymbol{X}$};
 	  \node[shape=circle, draw=black, minimum size=1cm] (t) at (-3,-3) {$T$};
 	  \node[shape=rectangle, draw=black, minimum size=1cm] (s) at (-0.25,-1.82) {$S$};
@@ -53,13 +47,7 @@ Causal Inference can only be performed on reliably linked data, otherwise identi
     \path [-stealth] (x) edge (t);
     \path [-stealth] (x) edge (y);
     \path [-stealth] (tt) edge (y);
-    \end{tikzpicture}\begin{tikzpicture}[
-      every node/.style={align=center},
-      assumption/.style={draw, circle},
-      check/.style={draw, rounded corners},
-      result/.style={draw},
-      arrow/.style={->, thick}
-    ]
+    \end{tikzpicture}\begin{tikzpicture}
     \node[shape=circle, draw=black, minimum size=1cm] (xi) at (-0.25,1) {$\boldsymbol{X}_i$};
 	  \node[shape=circle, draw=black, minimum size=1cm] (ti) at (-3,-3) {$T_i$};
 	  \node[shape=rectangle, draw=black, minimum size=1cm] (s) at (0.4375,-2.2) {$S_{i,j}$};
