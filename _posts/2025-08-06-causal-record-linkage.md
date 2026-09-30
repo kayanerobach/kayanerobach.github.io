@@ -13,19 +13,29 @@ tikzjax: true
 
 Linked data sets present a valuable resource for causal inference by granting access to broader sets of variables across wider populations and extended time periods. Through record linkage, researchers can control for confounding and investigate long-term outcomes. However, understanding when and how causal inference can be performed on linked data remains an overlooked problem
 
-In this project we examine how record linkage conflicts with the assumptions required for identifying causal effects. Our investigation reveals that linkage errors result in inconsistencies and alter exchangeability in the causal framework, leading to attenuation and opposite contribution biases in the inference. In attempting to address these biases by being more stringent on the linkage, positivity is curtailed and sampling bias inadvertently emerges.
+In this project we examine how record linkage conflicts with the assumptions required for identifying causal effects. Our investigation reveals that linkage errors result in inconsistencies in the causal framework, leading to attenuation bias (due to linked profiles discrepancy and opposite contributions) in the inference. In attempting to address this bias by being more stringent on the linkage, positivity / population distributions overlap are curtailed and sampling bias inadvertently emerges.
 
 We demonstrate how to generalise the effect estimated on rigorously linked data and discuss how linkage decisions should be informed accordingly. Importantly, we identify when existing and novel solutions support valid causal inference on linked data and when inference should be treated with caution or even abandoned. We propose strategies to report on the estimated effect uncertainty and we illustrate the challenges raised and the potential solutions using a simulation study and real data from a Study on Women's Health.
 
 ### Article
 
-In this project, we explore the impact of data linkage on the conditions necessary for identification of a causal effect. A trade-off arises: between the bias resulting from linkage errors and the bias resulting from the selection process induced by rigour in the linked data. We provide solutions using generalisability methods to estimate the causal effect on atypical records linked through RL.
+In this project, we formalise the task of causal inference on linked data, we explore the impact of record linkage on the conditions necessary for identification of a causal effect, we address recoverability from selection sampling bias. A trade-off arises: between the bias resulting from linkage errors and the bias resulting from the selection process induced by rigour in the linked data. We provide solutions using generalisability methods to estimate the causal effect on atypical records linked through record linkage.
 <br>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% include repository/repo.liquid username='robachowyk' repository='robachowyk/CausalRL-experiments' %}
 </div>
 <br>
+
+### Poster
+
+<div class="exampletest">
+<div align=center>
+<div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/poster_causal-record-linkage.png" class="img-fluid" %}
+    </div>
+</div>
+</div>
 
 ### Technical details
 
@@ -34,44 +44,10 @@ Causal Inference can only be performed on reliably linked data, otherwise identi
 
 <div class="exampletest">
 <div align=center>
-<br>
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \node[shape=circle, draw=black, minimum size=1cm] (x) at (-0.25,1) {$\boldsymbol{X}$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (t) at (-3,-3) {$T$};
-	  \node[shape=rectangle, draw=black, minimum size=1cm] (s) at (-0.25,-1.82) {$S$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (y) at (2.5,-3) {$Y(t)$};
-    \node[shape=circle, minimum size=1cm] (transparent) at (3,-3.35) {};
-    \node[draw,shape=circle,minimum size=0.5cm,fill=gray!15] (tt) at (-2.18,-3) {$t$};
-    \path [-stealth] (x) edge (s);
-    \path [-stealth] (x) edge (t);
-    \path [-stealth] (x) edge (y);
-    \path [-stealth] (tt) edge (y);
-    \end{tikzpicture}\begin{tikzpicture}
-    \node[shape=circle, draw=black, minimum size=1cm] (xi) at (-0.25,1) {$\boldsymbol{X}_i$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (ti) at (-3,-3) {$T_i$};
-	  \node[shape=rectangle, draw=black, minimum size=1cm] (s) at (0.4375,-2.2) {$S_{i,j}$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (yi) at (2.5,-3) {$Y_i(t)$};
-    \node[draw,shape=circle,minimum size=0.5cm,fill=gray!15] (tti) at (-2.18,-3) {$t$};
-    \node[shape=circle, draw=black, minimum size=1cm] (xj) at (1.125,0.3) {$\boldsymbol{X}_j$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (tj) at (-1.625,-3.7) {$T_j$};
-	  \node[shape=circle, draw=black, minimum size=1cm] (yj) at (3.875,-3.7) {$Y_j(t)$};
-    \node[draw,shape=circle,minimum size=0.5cm,fill=gray!15] (ttj) at (-0.805,-3.7) {$t$};
-    \path [-stealth] (xi) edge (s);
-    \path [-stealth] (xi) edge (ti);
-    \path [-stealth] (xi) edge (yi);
-    \path [-stealth] (tti) edge (yi);
-    \path [-stealth] (xj) edge (s);
-    \path [-stealth] (xj) edge (tj);
-    \path [-stealth] (xj) edge (yj);
-    \path [-stealth] (ttj) edge (yj);
-  \end{tikzpicture}
-</script>
-<i><font color="#0093af">Selection diagram depicting differences between source population contained in the data and reliably linked population obtained with record linkage (indicated by $S$). The selection process is made on the linking variables $\boldsymbol{Z}$ included in $\boldsymbol{X}$, hence $\boldsymbol{X}$ points to $S$.</font></i>
-<br>
-<br>
+<div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/selectiondiagram.png" class="img-fluid" %}
+    </div>
 </div>
 </div>
+Selection diagrams depicting differences between source population contained in the data and linked population obtained with record linkage (indicated by S). The selection process is made on the linking variables Z overlapping with covariates X, hence S descends from X.
 
-<br>
-Therefore, in order to estimate a causal effect from linked data, one has to rely on S-recoverability and G-methods. The main issue with Causal Record Linkage concerns positivity, but it can be waived if one is willing to rely on parametric extrapolation via outcome modelling.
