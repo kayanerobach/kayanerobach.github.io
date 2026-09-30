@@ -29,7 +29,9 @@ In this project, we formalise the task of causal inference on linked data, we ex
 
 ### Poster
 
-<div class="exampletest">
+/assets/img/poster_causal-record-linkage.png
+
+<div class="row">
 <div align=center>
 <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/poster_causal-record-linkage.png" class="img-fluid" %}
@@ -49,5 +51,7 @@ Causal Inference can only be performed on reliably linked data, otherwise identi
     </div>
 </div>
 </div>
-Selection diagrams depicting differences between source population contained in the data and linked population obtained with record linkage (indicated by S). The selection process is made on the linking variables Z overlapping with covariates X, hence S descends from X.
 
+<div class="caption">
+    Selection diagrams depicting differences between source population contained in the data and linked population obtained with record linkage (indicated by S). The selection process is made on the linking variables Z overlapping with covariates X, hence S descends from X.
+</div>
