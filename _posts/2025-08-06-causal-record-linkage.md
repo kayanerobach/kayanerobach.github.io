@@ -29,8 +29,6 @@ In this project, we formalise the task of causal inference on linked data, we ex
 
 ### Poster
 
-/assets/img/poster_causal-record-linkage.png
-
 <div class="row">
 <div align=center>
 <div class="col-sm mt-3 mt-md-0">
